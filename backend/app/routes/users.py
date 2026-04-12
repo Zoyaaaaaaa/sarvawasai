@@ -2,8 +2,10 @@
 from fastapi import APIRouter, HTTPException
 try:
     from ..services.database import get_database
+    from ..utils.password_utils import truncate_password_to_bcrypt_limit
 except Exception:
     from backend.app.services.database import get_database  # type: ignore
+    from backend.app.utils.password_utils import truncate_password_to_bcrypt_limit  # type: ignore
 from datetime import datetime, timezone
 from bson import ObjectId
 from pymongo.errors import DuplicateKeyError
@@ -60,10 +62,7 @@ async def signup_user(payload: dict):
             raise HTTPException(status_code=400, detail=f"Missing required field: {field}")
     
     password = payload.get("password")
-    if password:
-        password_bytes = password.encode('utf-8')
-        if len(password_bytes) > 72:
-            password = password_bytes[:72].decode('utf-8', errors='replace')
+    password = truncate_password_to_bcrypt_limit(password)
 
     role = payload.get("userType")
     if role not in ["buyer", "investor"]:
@@ -233,6 +232,9 @@ async def login_user(payload: dict):
     try:
         if not email or not password:
             raise HTTPException(status_code=400, detail="Email and password required")
+
+        # Truncate password to 72 bytes (bcrypt limit)
+        password = truncate_password_to_bcrypt_limit(password)
 
         user = await db.users.find_one(
             {"$or": [{"email": email}, {"phone": email}]}
