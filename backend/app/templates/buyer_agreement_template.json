@@ -1,0 +1,144 @@
+{
+  "title": "Co-Investment and Home Purchase Agreement - {buyerName} / {investorName}",
+  "author": "SarvAwas AI",
+  "page": {
+    "size": "A4",
+    "margins_mm": { "left": 20, "right": 20, "top": 20, "bottom": 20 }
+  },
+  "content": [
+    { "type": "title", "text": "CO-INVESTMENT AND HOME PURCHASE AGREEMENT" },
+    { "type": "paragraph", "text": "This Co-Investment and Home Purchase Agreement (the \"Agreement\") is executed on this ___ day of __________, 20__, at {place_of_execution}." },
+    { "type": "spacer", "height_mm": 4 },
+
+    { "type": "heading", "text": "PARTIES" },
+    { "type": "paragraph", "text": "(a) {buyerName}, son/daughter of {buyerParent}, residing at {buyerAddress}, email {buyerEmail}, phone {buyerMobile}, Aadhaar {buyerAadhaar}, PAN {buyerPAN} (hereinafter referred to as the \"Homebuyer\"); and" },
+    { "type": "paragraph", "text": "(b) {investorName}, son/daughter of {investorParent}, residing at {investorAddress}, email {investorEmail}, phone {investorMobile}, Aadhaar {investorAadhaar}, PAN {investorPAN} (hereinafter referred to as the \"Investor\")." },
+    { "type": "paragraph", "text": "The Homebuyer and the Investor are hereinafter individually referred to as a \"Party\" and collectively as the \"Parties\"." },
+    { "type": "spacer", "height_mm": 4 },
+
+    { "type": "heading", "text": "RECITALS" },
+    { "type": "paragraph", "text": "WHEREAS, the Homebuyer has agreed to purchase the immovable property more particularly described hereinbelow (the \"Property\") for a total purchase price of INR {propertyValue} (Rupees {propertyValue} only) (the \"Purchase Price\");" },
+    { "type": "paragraph", "text": "AND WHEREAS, the Investor has agreed to contribute a portion of the down payment towards the acquisition of the Property in consideration of a proportionate economic interest in the Property in accordance with the terms and conditions set out in this Agreement;" },
+    { "type": "paragraph", "text": "NOW, THEREFORE, in consideration of the mutual covenants and promises contained herein and other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties hereby agree as follows:" },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "1. DEFINITIONS AND INTERPRETATION" },
+    { "type": "paragraph", "text": "1.1 Definitions. For the purposes of this Agreement and unless the context otherwise requires: (a) \"Agreement\" means this Co-Investment and Home Purchase Agreement together with all schedules, annexures and amendments; (b) \"Buy-Out\" means the purchase by the Homebuyer of the Investor’s Equity Share in accordance with Clause 5; (c) \"Down Payment Contribution\" means the amount of INR {investorContribution} contributed by the Investor towards the down payment; (d) \"Equity Share\" means the Investor’s percentage interest in the Property as calculated in accordance with Clause 3.2; (e) \"Fair Market Valuation\" means the market value of the Property determined by an independent registered valuer appointed in accordance with Clause 5.3; and (f) \"Co‑Investment Period\" means the period commencing on the date of execution of this Agreement and continuing until the Investor’s Equity Share is lawfully extinguished by a Buy‑Out or other termination in accordance with this Agreement." },
+    { "type": "paragraph", "text": "1.2 Interpretation. Headings are for convenience only and shall not affect interpretation. References to Clauses, Schedules and Annexures are references to clauses of, and schedules and annexures to, this Agreement." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "2. SUMMARY OF KEY TERMS" },
+    { "type": "paragraph", "text": "2.1 Purchase Price: INR {propertyValue}." },
+    { "type": "paragraph", "text": "2.2 Investor’s Down Payment Contribution: INR {investorContribution} (Rupees {investorContributionWords} only)." },
+    { "type": "paragraph", "text": "2.3 Buyer’s Contribution (if any): INR {buyerAmount}." },
+    { "type": "paragraph", "text": "2.4 Down Payment (aggregate): INR {downPayment}." },
+    { "type": "paragraph", "text": "2.5 Equity Share (%): {equityPercent}." },
+    { "type": "paragraph", "text": "2.6 Place of Execution: {place_of_execution}. Arbitration Seat: {arbitrationCity}, {arbitrationState}." },
+  { "type": "spacer", "height_mm": 4 },
+  { "type": "heading", "text": "2. TITLE, POSSESSION AND MANAGEMENT" },
+  { "type": "paragraph", "text": "2.1 Title. The Parties agree that the title to the Property shall at all times remain solely and exclusively in the name of the Homebuyer and the Homebuyer shall be the registered owner in the relevant records." },
+  { "type": "paragraph", "text": "2.2 Possession and Management. The Homebuyer shall have exclusive possession, control and management of the Property during the Co‑Investment Period and shall have the right to occupy, let, re‑let, or otherwise deal with the Property in his/her sole discretion, subject to the express provisions of this Agreement." },
+  { "type": "paragraph", "text": "2.3 Obligations of Homebuyer. During the Co‑Investment Period, the Homebuyer shall at his/her cost and expense: (a) pay all stamp duty and registration charges (if any) payable in respect of execution of this Agreement and any document of transfer; (b) pay and discharge all property taxes, municipal/cess/utility charges and any other statutory dues in respect of the Property; (c) ensure maintenance, repair, upkeep and insurance of the Property, including but not limited to fire and allied perils insurance with a reputable insurer, and maintain records of such maintenance and insurance; and (d) ensure that any tenancy/lease entered into for the Property shall be in writing and a copy of every such lease/tenancy agreement shall be provided to the Investor within fourteen (14) days of execution." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "3. PROPERTY DETAILS" },
+    { "type": "paragraph", "text": "3.1 Property Identification. Name/Title: {propertyName}. Location (textual): {propertyLocationText}. Geographic Coordinates (if available): Latitude {latitude}, Longitude {longitude}." },
+    { "type": "paragraph", "text": "3.2 Description and Value. Full description: {propertyFullDescription}. Indicative Property Value: INR {propertyValue}." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "4. INVESTOR CONTRIBUTION AND EQUITY" },
+    { "type": "paragraph", "text": "4.1 Down Payment Contribution. The Investor shall contribute INR {investorContribution} (Rupees {investorContributionWords} only) to the Homebuyer by electronic bank transfer for the purpose of enabling payment of the down payment and other sums reasonably required for the acquisition of the Property." },
+    { "type": "paragraph", "text": "4.2 Equity Share. The Investor’s Equity Share (%) in the Property shall be computed as: Equity Share (%) = (Investor’s Down Payment Contribution / Purchase Price) × 100. By way of illustration, if the Purchase Price is INR {propertyValue} and the Investor contributes INR {investorContribution}, Equity Share (%) = ({investorContribution} ÷ {propertyValue}) × 100." },
+    { "type": "paragraph", "text": "4.3 No Management Rights. The Investor shall have no rights to participate in the day-to-day possession, control, operation or management of the Property and shall not direct or interfere with the Homebuyer’s decisions except as expressly provided herein." },
+    { "type": "paragraph", "text": "4.4 Records. The Homebuyer shall maintain accurate books and records with respect to rent receipts and shall provide the Investor monthly statements showing gross rent collected, permissible deductions (if any) and the amount remitted to the Investor." },
+
+    { "type": "spacer", "height_mm": 6 },
+  { "type": "heading", "text": "5. DISTRIBUTION OF RENT AND TAXES" },
+  { "type": "paragraph", "text": "5.1 Distribution. If the Property is let and Net Rent is received, the Homebuyer shall, within seven (7) business days of receipt of rent for each calendar month, remit to the Investor his/her share of Net Rent equal to: Investor’s Monthly Rent Share = Net Rent × (Equity Share (%)/100). The Homebuyer may retain the balance of Net Rent as his/her share." },
+  { "type": "paragraph", "text": "5.2 Records and Receipts. Payment to the Investor shall be evidenced by an electronic transfer (bank credit) with accompanying remittance advice. The Homebuyer shall keep originals of rent receipts and any tenancy agreements and make them available for inspection by the Investor on reasonable notice (not less than seven (7) days)." },
+  { "type": "paragraph", "text": "5.3 Taxes on Income. The Investor shall be liable to pay and file tax on the rental income so received by him/her in accordance with Applicable Law. The Homebuyer shall provide necessary details and a statement to enable the Investor to discharge his/her tax obligations. Any tax that is required to be deducted at source under Applicable Law from rents paid to the Investor shall be deducted by the Homebuyer and remitted to the authorities; the Homebuyer will provide the Investor the TDS certificate." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "6. BUY-OUT, VALUATION AND TRANSFER" },
+    { "type": "paragraph", "text": "6.1 Buy-Out Option. The Homebuyer shall have the option to Buy-Out the Investor’s Equity Share in whole at any time during the co-investment period by paying the Buy-Out Amount as provided herein." },
+    { "type": "paragraph", "text": "6.2 Buy-Out Amount. Buy-Out Amount = Investor’s Down Payment Contribution ± (Change in Property Value × (Equity Share (%) / 100)), where Change in Property Value = Fair Market Valuation on the Buy-Out date minus the Reference Value (being the Purchase Price or such other mutually agreed reference)." },
+    { "type": "paragraph", "text": "6.3 Valuation. Fair market value shall be determined by an independent registered valuer appointed jointly by the Parties. If the Parties fail to agree, each Party shall nominate one valuer and the two valuers shall appoint a third valuer; the third valuer’s determination shall be final and binding. Valuation costs shall be borne equally unless otherwise agreed." },
+    { "type": "paragraph", "text": "6.4 Procedure. (a) The Homebuyer shall give written Buy-Out Notice specifying the Buy-Out date (not less than thirty (30) and not more than ninety (90) days from notice) enclosing the valuer’s report; (b) the Investor shall deliver transfer documents on or before the Buy-Out date; (c) the Homebuyer shall pay the Buy-Out Amount on or before the Buy-Out date against delivery of transfer documents; and (d) upon payment and transfer, the Investor’s rights shall stand extinguished." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "7. COVENANTS AND DEFAULTS" },
+    { "type": "paragraph", "text": "7.1 Homebuyer Covenants. The Homebuyer shall: (a) maintain the Property in good and tenantable condition; (b) pay, during the co-investment period, all stamp duty and registration charges payable in respect of this Agreement and any document of transfer, property taxes, municipal/utility charges and other statutory dues; (c) ensure maintenance, repair, upkeep and insurance of the Property; and (d) ensure any tenancy/lease is in writing and a copy provided to the Investor within fourteen (14) days of execution." },
+    { "type": "paragraph", "text": "7.2 Investor Covenants. The Investor shall: (a) provide the Down Payment Contribution from lawful sources; (b) not interfere with day-to-day management or occupation of the Property; and (c) maintain confidentiality with respect to non-public information received pursuant to this Agreement." },
+    { "type": "paragraph", "text": "7.3 Loan Defaults. The Homebuyer is solely responsible for EMIs and loan obligations. If a lender serves notice or initiates foreclosure, the Homebuyer shall notify the Investor within seven (7) days and provide copies of communications. If sale occurs by lender, net sale proceeds (after outstanding loan and lawful costs) shall be distributed in proportion to Equity Shares, subject always to creditor rights." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "8. REPRESENTATIONS, INDEMNITY AND LIMITATION" },
+    { "type": "paragraph", "text": "8.1 Representations. Each Party represents that it has full capacity and authority to enter into and perform this Agreement. The Homebuyer further represents that there are no undisclosed encumbrances affecting the Property and that Investor funds will be applied towards lawful acquisition." },
+    { "type": "paragraph", "text": "8.2 Indemnity. Each Party shall indemnify and hold harmless the other from and against claims, liabilities, losses and costs (including reasonable legal fees) arising from breach of its representations, covenants or applicable laws, provided that no indemnity shall apply to the extent of the other Party’s fraud or wilful misconduct." },
+    { "type": "paragraph", "text": "8.3 Limitation. Except for liability arising from fraud, wilful misconduct or gross negligence, indemnities herein, or willful breach of title representations, neither Party shall be liable for indirect, incidental, consequential, punitive or special damages. Aggregate liability shall in no event exceed the Buy-Out Amount or actual direct damages proven, whichever is lower." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "9. NOTICES" },
+    { "type": "paragraph", "text": "9.1 Mode and Deemed Receipt. All notices shall be in writing and delivered by hand, registered post, reputable courier or email (with acknowledgement) and shall be deemed received upon delivery or upon electronic acknowledgment, as applicable." },
+    { "type": "paragraph", "text": "9.2 Addresses for Service — Homebuyer. Name: {buyerName}; Address for notices: {buyerNoticeAddress}; Email: {buyerEmail}; Phone: {buyerMobile}; PAN/Aadhaar: {buyerPAN}/{buyerAadhaar}." },
+    { "type": "paragraph", "text": "9.3 Addresses for Service — Investor. Name: {investorName}; Address for notices: {investorNoticeAddress}; Email: {investorEmail}; Phone: {investorMobile}; PAN/Aadhaar: {investorPAN}/{investorAadhaar}." },
+    { "type": "paragraph", "text": "9.4 Change of Details. Either Party may change its contact details by providing seven (7) days’ prior written notice to the other Party." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "10. DISPUTE RESOLUTION" },
+    { "type": "paragraph", "text": "10.1 Amicable Settlement. The Parties shall attempt in good faith to resolve disputes by negotiation within thirty (30) days." },
+    { "type": "paragraph", "text": "10.2 Arbitration. Failing settlement, disputes shall be referred to arbitration under the Arbitration and Conciliation Act, 1996. The seat and venue of arbitration shall be {arbitrationCity}, {arbitrationState}. The tribunal shall comprise one (1) sole arbitrator. The language shall be English. The award shall be final and binding." },
+    { "type": "paragraph", "text": "10.3 Interim Relief. Nothing herein shall prevent a Party from seeking interim or injunctive relief from courts of competent jurisdiction pending arbitration." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "11. MISCELLANEOUS" },
+    { "type": "paragraph", "text": "11.1 Entire Agreement. This Agreement constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior understandings." },
+    { "type": "paragraph", "text": "11.2 Amendment. No amendment shall be valid unless in writing and signed by both Parties." },
+    { "type": "paragraph", "text": "11.3 Severability. If any provision is held invalid, the remaining provisions shall remain in full force and effect." },
+    { "type": "paragraph", "text": "11.4 Waiver. No delay or failure to exercise any right shall operate as a waiver thereof." },
+    { "type": "paragraph", "text": "11.5 Costs. Each Party shall bear its own costs unless otherwise expressly provided." },
+    { "type": "paragraph", "text": "11.6 Taxes, Stamp Duty and Registration. The Homebuyer shall pay all stamp duty and registration charges in respect of transfer/Buy-Out documents; if any tax/duty is lawfully required from the Investor, the Investor shall pay the same." },
+    { "type": "paragraph", "text": "11.7 Assignment. The Investor shall not assign rights under this Agreement without the Homebuyer’s prior written consent (not to be unreasonably withheld). The Homebuyer shall not assign obligations that increase the Investor’s burden without the Investor’s prior written consent." },
+    { "type": "paragraph", "text": "11.8 Survival. Clauses relating to rent distributions, buy-out, indemnities, limitation of liability, confidentiality (if any), dispute resolution and miscellaneous shall survive termination." },
+
+    { "type": "spacer", "height_mm": 6 },
+  { "type": "heading", "text": "12. CONFIDENTIALITY AND DATA PROTECTION" },
+  { "type": "paragraph", "text": "12.1 Confidential Information. Each Party shall keep confidential all non-public information received from the other Party in connection with this Agreement and shall not disclose such information except (a) to its directors, officers, employees, professional advisors and financing partners who need to know the same and are bound by confidentiality obligations; (b) as required by Applicable Law or by any competent authority; or (c) with the prior written consent of the other Party." },
+  { "type": "paragraph", "text": "12.2 Data Protection. Each Party shall process any personal data of the other Party strictly for lawful purposes connected with this Agreement and shall implement reasonable technical and organisational measures to protect such personal data against unauthorised access, loss or disclosure." },
+  { "type": "paragraph", "text": "12.3 Survival. The obligations in this Clause shall survive termination of this Agreement for a period of three (3) years." },
+
+  { "type": "spacer", "height_mm": 6 },
+  { "type": "heading", "text": "13. FORCE MAJEURE" },
+  { "type": "paragraph", "text": "13.1 Definition. A \"Force Majeure Event\" means any event beyond the reasonable control of the affected Party including acts of God, flood, earthquake, epidemic, pandemic, war, civil commotion, strikes not limited to the workforce of a Party, acts of government or regulatory authorities, or any event of a similar nature that renders performance impossible or impracticable." },
+  { "type": "paragraph", "text": "13.2 Consequences. The affected Party shall not be liable for delay or failure to perform its obligations under this Agreement to the extent and for so long as performance is prevented by a Force Majeure Event, provided that the affected Party promptly notifies the other Party and uses reasonable efforts to mitigate the impact and resume performance." },
+  { "type": "paragraph", "text": "13.3 Termination for Extended Force Majeure. If a Force Majeure Event continues for more than ninety (90) consecutive days, either Party may terminate this Agreement without liability (other than obligations accrued prior to termination)." },
+
+  { "type": "spacer", "height_mm": 6 },
+  { "type": "heading", "text": "14. TERM AND TERMINATION" },
+  { "type": "paragraph", "text": "14.1 Term. This Agreement shall commence on the date first written above and shall continue during the Co‑Investment Period unless earlier terminated in accordance with this Agreement." },
+  { "type": "paragraph", "text": "14.2 Termination Events. This Agreement shall terminate upon the earliest of: (a) completion of a Buy‑Out and full payment and transfer; (b) sale of the Property and distribution of proceeds; or (c) mutual written agreement of the Parties." },
+  { "type": "paragraph", "text": "14.3 Effect of Termination. Termination shall be without prejudice to accrued rights and obligations of the Parties, including payment, indemnities and confidentiality obligations which shall survive in accordance with their terms." },
+
+  { "type": "spacer", "height_mm": 6 },
+  { "type": "heading", "text": "15. GOVERNING LAW AND JURISDICTION" },
+  { "type": "paragraph", "text": "15.1 Governing Law. This Agreement shall be governed by and construed in accordance with the laws of India, without regard to conflict of law principles." },
+  { "type": "paragraph", "text": "15.2 Jurisdiction. Subject to Clause 10 (Dispute Resolution), courts at {arbitrationCity}, {arbitrationState} shall have exclusive jurisdiction for the purpose of granting interim reliefs or for enforcement of the arbitral award." },
+
+  { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "SCHEDULE — PARTIES’ DETAILS" },
+    { "type": "paragraph", "text": "Homebuyer: Name {buyerName}; Address {buyerAddress}; Email {buyerEmail}; Phone {buyerMobile}; PAN/Aadhaar {buyerPAN}/{buyerAadhaar}." },
+    { "type": "paragraph", "text": "Investor: Name {investorName}; Address {investorAddress}; Email {investorEmail}; Phone {investorMobile}; PAN/Aadhaar {investorPAN}/{investorAadhaar}." },
+
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "heading", "text": "ANNEXURE A — PAYMENT SCHEDULE (ILLUSTRATIVE)" },
+    { "type": "paragraph", "text": "Agreement Signing: INR {downPayment} on {agreementDate} (Paid: {paidAtSigning}). Registry / Possession: INR {registryAmount} on {registryDate} (Paid: {paidAtRegistry}). Other Charges (if any): INR {otherCharges} on {otherChargesDate} (Paid: {otherChargesPaid})." },
+
+    { "type": "spacer", "height_mm": 8 },
+    { "type": "heading", "text": "EXECUTION" },
+    { "type": "paragraph", "text": "IN WITNESS WHEREOF the Parties have executed this Agreement on the day and year first above written." },
+     { "type": "spacer", "height_mm": 8 },
+    
+    { "type": "spacer", "height_mm": 6 },
+    { "type": "smalltext", "text": "Note: This template is a legal-style draft for demonstration purposes. For enforceability please complete Aadhaar eSign/e-stamping and obtain legal review before relying on this Agreement." }
+  ]
+}

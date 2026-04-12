@@ -1,0 +1,59 @@
+          {/* Info Section */}
+          <div className="space-y-6">
+            <Card className="border-slate-200">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-cyan-50 border-b border-slate-200">
+                <CardTitle className="text-blue-900 flex items-center gap-2">
+                  <BookOpen className="w-5 h-5" />
+                  About This Service
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6 space-y-4 text-slate-700">
+                <p>
+                  Our AI-powered legal analysis service specializes in <strong>Indian real estate law</strong>, including:
+                </p>
+                <ul className="space-y-2 ml-4">
+                  <li className="flex gap-2">
+                    <span className="text-emerald-600 font-bold">•</span>
+                    <span><strong>RERA</strong> (Real Estate Regulation and Development Act)</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-600 font-bold">•</span>
+                    <span><strong>Property Transfer</strong> regulations and procedures</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-600 font-bold">•</span>
+                    <span><strong>Mortgage Agreements</strong> and loan terms</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-600 font-bold">•</span>
+                    <span><strong>Lease Agreements</strong> and tenant rights</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-600 font-bold">•</span>
+                    <span><strong>Stamp Duty</strong> and registration requirements</span>
+                  </li>
+                </ul>
+                <p className="font-semibold text-slate-800">
+                  How to Use:
+                </p>
+                <ol className="space-y-2 ml-4 list-decimal">
+                  <li className="flex gap-2">
+                    <span className="font-bold text-emerald-600 min-w-6">1</span>
+                    <span>Upload your legal document (PDF, DOC, DOCX)</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="font-bold text-emerald-600 min-w-6">2</span>
+                    <span>Select focus area and analysis type</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="font-bold text-emerald-600 min-w-6">3</span>
+                    <span>Choose your preferred language</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="font-bold text-emerald-600 min-w-6">4</span>
+                    <span>Click "Analyze Document" to get instant insights</span>
+                  </li>
+                </ol>
+              </CardContent>
+            </Card>
+          </div>

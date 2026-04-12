@@ -1,0 +1,93 @@
+# Investor Similarity System Configuration
+
+# Feature Version
+feature_version: "v1.0"
+
+# Confidence Weights by Block
+confidence_weights:
+  block_a: 0.4   # Attitude & Trust (survey data)
+  block_b_platform: 1.0  # Economic Constraints (platform, verified)
+  block_b_synthetic: 0.3  # Economic Constraints (synthetic)
+  block_c: 0.0   # Behavioral (increases with data)
+
+# Bias Monitoring
+bias_monitoring:
+  correlation_threshold: 0.1  # Max |correlation| with demographics
+  protected_attributes:
+    - age
+    - gender
+    - location
+    - occupation
+    - income
+    - education
+  audit_frequency_days: 30
+
+# Similarity Engine
+similarity:
+  weights:
+    attitude: 0.35
+    constraint: 0.40
+    behavioral: 0.25
+  hard_filters:
+    capital_band_tolerance: 1
+    holding_period_tolerance: 1
+  recommendation:
+    top_k: 10
+    min_similarity: 0.3
+
+# Synthetic Data Generation
+synthetic_data:
+  method: "copula_v1"
+  confidence_weight: 0.3
+  default_samples: 100
+  random_seed: 42
+  
+  # Correlation structure for Block A (4x4 matrix)
+  block_a_correlation:
+    - [1.0, 0.2, 0.1, 0.3]  # risk_orientation
+    - [0.2, 1.0, 0.1, 0.2]  # collaboration_comfort
+    - [0.1, 0.1, 1.0, 0.0]  # control_preference
+    - [0.3, 0.2, 0.0, 1.0]  # re_conviction
+
+# Market Priors (from public reports)
+market_priors:
+  # Capital band thresholds (INR)
+  capital_bands:
+    0: [0, 500000]           # < 5L
+    1: [500000, 2000000]     # 5L - 20L
+    2: [2000000, 5000000]    # 20L - 50L
+    3: [5000000, 10000000]   # 50L - 1Cr
+    4: [10000000, 999999999] # > 1Cr
+  
+  # ROI expectations (annual %)
+  roi_bands:
+    low: [0, 8]
+    medium: [8, 15]
+    high: [15, 100]
+  
+  # Holding period (months)
+  holding_bands:
+    short: [0, 12]
+    medium: [12, 36]
+    long: [36, 1000]
+
+# Data Storage
+storage:
+  snapshots_path: "./data/snapshots"
+  datasets_path: "./data/datasets"
+  audits_path: "./data/audits"
+
+# Security
+security:
+  hash_algorithm: "sha256"
+  encrypt_snapshots: false  # Set to true in production
+  pii_allowed: false
+  
+# Governance
+governance:
+  refresh_cadence:
+    survey: 90  # days
+    platform: 30  # days
+    behavioral: 7  # days
+  require_bias_tests: true
+  require_source_logs: true

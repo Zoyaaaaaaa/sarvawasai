@@ -1,0 +1,19 @@
+{
+  "timestamp": "20260124_231804",
+  "model_type": "XGBoost LambdaMART",
+  "performance": {
+    "ndcg@3": 0.9483918495930683,
+    "ndcg@5": 0.9277843690714572,
+    "ndcg@10": 0.8946127013283427,
+    "ndcg@20": 0.8824512353863107,
+    "precision@1": 1.0,
+    "precision@3": 1.0,
+    "precision@5": 1.0,
+    "map": 0.9341166335951455,
+    "mrr": 1.0,
+    "kendall_tau": 0.01107878787878788
+  },
+  "bias": {
+    "demographic_importance": 0.006667479872703552,
+    "ndcg_variance": 6.43896308147768e-05,
+    "bias_free": 

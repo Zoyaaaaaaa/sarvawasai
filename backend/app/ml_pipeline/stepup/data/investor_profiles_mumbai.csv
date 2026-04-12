@@ -1,0 +1,501 @@
+userId,age,profession,availableCapital,minInvestmentPerDeal,maxInvestmentPerDeal,riskAppetite,preferredLocations,expectedROI,investmentHistory,experienceYears,city,contactPreference
+INV0001,57,Architect,5020322,415113,1334386,High,['Thane West'],15.72,3,14,Mumbai,Phone
+INV0002,41,Consultant,5635180,561230,980098,Low,"['Vile Parle', 'Chembur']",11.24,1,5,Mumbai,Email
+INV0003,48,Architect,1326616,191471,598310,Low,"['Andheri East', 'Fort', 'Juhu']",11.33,15,20,Mumbai,Email
+INV0004,38,Banker,13630044,2610083,7361657,Medium,['Ghatkopar'],8.8,1,18,Mumbai,WhatsApp
+INV0005,51,Architect,18011611,2184052,7241671,Low,['Borivali West'],17.37,13,20,Mumbai,WhatsApp
+INV0006,37,Software Engineer,19477709,2438134,8617416,Low,"['Andheri East', 'Borivali East']",6.9,15,10,Mumbai,WhatsApp
+INV0007,33,Entrepreneur,10657912,1590119,4009159,Low,"['Andheri East', 'Andheri West']",16.24,7,22,Mumbai,Email
+INV0008,47,Architect,13561326,1787185,5983749,High,"['Goregaon East', 'Vile Parle', 'Mira Road']",6.23,12,14,Mumbai,WhatsApp
+INV0009,47,Doctor,8389935,937095,1931804,Low,"['Bandra East', 'Powai']",13.24,17,22,Mumbai,Phone
+INV0010,47,Architect,5447405,551224,1250116,Medium,"['Goregaon West', 'Andheri East']",12.93,13,10,Mumbai,Email
+INV0011,43,Entrepreneur,17017429,1399700,3777114,Low,['Khar West'],16.34,9,20,Mumbai,WhatsApp
+INV0012,55,Software Engineer,3488936,394948,1185810,Low,['Santacruz East'],13.81,12,15,Mumbai,WhatsApp
+INV0013,34,Accountant,13068506,1544690,5853785,High,"['Mira Road', 'Khar West', 'Malad West']",14.09,7,10,Mumbai,Phone
+INV0014,39,Banker,9740241,1216257,1829725,Low,"['Fort', 'Powai', 'Kurla']",7.84,15,5,Mumbai,Email
+INV0015,40,Software Engineer,16550696,624387,2162327,Medium,"['Thane East', 'Andheri East']",16.36,0,16,Mumbai,Email
+INV0016,40,Entrepreneur,17437490,707023,4025279,Medium,"['Andheri West', 'Santacruz East', 'Thane West']",17.38,15,9,Mumbai,WhatsApp
+INV0017,41,Sales Manager,4620704,444044,2220473,Low,"['Santacruz West', 'Andheri East']",17.23,20,4,Mumbai,Phone
+INV0018,54,Entrepreneur,7767768,1412160,3372745,Low,"['Mulund', 'Vile Parle']",14.26,2,22,Mumbai,Phone
+INV0019,30,Marketing Executive,8033529,1304425,4089371,High,"['Santacruz East', 'Borivali East']",11.45,18,20,Mumbai,WhatsApp
+INV0020,56,Doctor,14425740,2814269,7970777,Medium,['Kurla'],16.26,16,6,Mumbai,Email
+INV0021,46,Consultant,10201164,754709,4668107,High,"['Andheri West', 'Mulund', 'Mira Road']",7.74,19,21,Mumbai,Email
+INV0022,57,Lawyer,18937774,1859552,8982273,Medium,"['Fort', 'Borivali West', 'Chembur']",12.29,14,8,Mumbai,Email
+INV0023,31,Entrepreneur,14442155,2112480,2889040,Medium,['Goregaon West'],6.25,2,7,Mumbai,Phone
+INV0024,43,Software Engineer,12399424,2034303,6236921,Medium,"['Dadar', 'Borivali East', 'Lower Parel']",9.96,4,15,Mumbai,Phone
+INV0025,53,Sales Manager,10274806,1715827,3040998,Medium,"['Worli', 'Thane East']",13.27,13,15,Mumbai,Email
+INV0026,53,Doctor,10465566,837987,2067062,Medium,"['Andheri West', 'Santacruz East']",17.87,14,18,Mumbai,Email
+INV0027,60,Consultant,14567604,1172873,5844797,High,"['Vile Parle', 'Chembur']",8.62,16,8,Mumbai,WhatsApp
+INV0028,36,Marketing Executive,1867550,311578,1026093,Medium,"['Ghatkopar', 'Lower Parel', 'Borivali West']",6.81,4,15,Mumbai,Phone
+INV0029,35,Doctor,7440131,1078401,2713895,Medium,"['Lower Parel', 'Worli', 'Colaba']",10.43,19,13,Mumbai,Phone
+INV0030,42,Consultant,11363654,314937,1808767,High,"['Khar West', 'Santacruz East', 'Bandra East']",9.55,16,8,Mumbai,Phone
+INV0031,37,Software Engineer,14532404,1687775,7183106,Low,['Vile Parle'],17.98,20,24,Mumbai,Email
+INV0032,41,Consultant,3913336,486168,1464481,Low,"['Kurla', 'Ghatkopar', 'Powai']",13.31,4,8,Mumbai,WhatsApp
+INV0033,32,Banker,17374147,489132,3513896,Low,"['Andheri East', 'Santacruz West']",17.93,10,11,Mumbai,Email
+INV0034,42,Software Engineer,6407576,633595,1550153,High,"['Bandra West', 'Borivali West', 'Fort']",13.26,15,25,Mumbai,Phone
+INV0035,36,Sales Manager,6032744,328637,1928337,Low,['Santacruz West'],13.43,16,17,Mumbai,Email
+INV0036,32,Architect,4649896,218933,1412482,Medium,"['Fort', 'Goregaon East']",8.53,19,16,Mumbai,Phone
+INV0037,35,Marketing Executive,3728440,530077,1774831,Medium,"['Colaba', 'Juhu', 'Dadar']",13.78,6,21,Mumbai,Email
+INV0038,53,Entrepreneur,12785117,487158,5183808,Low,"['Worli', 'Ghatkopar', 'Santacruz East']",9.41,11,5,Mumbai,Email
+INV0039,43,Lawyer,8942079,653248,2184730,High,['Chembur'],13.96,1,10,Mumbai,Email
+INV0040,47,Consultant,733985,119593,377221,Low,"['Bandra East', 'Santacruz East']",17.09,13,21,Mumbai,WhatsApp
+INV0041,34,Consultant,6356432,1161636,3307079,Low,['Santacruz East'],17.23,15,21,Mumbai,Email
+INV0042,48,Doctor,13964815,1604431,6455027,Medium,"['Andheri East', 'Powai']",15.38,9,23,Mumbai,Email
+INV0043,59,Entrepreneur,9980384,1248754,2789166,High,"['Santacruz East', 'Andheri West']",16.35,7,11,Mumbai,WhatsApp
+INV0044,45,Sales Manager,13034782,963164,2596329,Low,"['Kurla', 'Ghatkopar']",9.91,12,13,Mumbai,Email
+INV0045,45,Software Engineer,18583496,895018,2639994,High,"['Santacruz West', 'Andheri West', 'Fort']",13.03,5,15,Mumbai,Phone
+INV0046,32,Software Engineer,5385219,388975,2371637,Low,['Borivali East'],17.95,17,14,Mumbai,Phone
+INV0047,53,Accountant,17233153,346741,5765276,Low,"['Thane West', 'Andheri East', 'Dadar']",6.25,17,17,Mumbai,Email
+INV0048,45,Architect,19100612,3298260,8399562,Low,['Borivali West'],16.98,13,7,Mumbai,WhatsApp
+INV0049,35,Sales Manager,18694787,881294,3906464,Medium,"['Vile Parle', 'Powai']",17.04,18,22,Mumbai,Email
+INV0050,30,Software Engineer,14224889,2597752,8150344,Medium,['Borivali East'],10.4,3,16,Mumbai,Email
+INV0051,47,Entrepreneur,1270397,216594,574859,Low,"['Fort', 'Bandra West', 'Powai']",15.42,0,9,Mumbai,Email
+INV0052,37,Marketing Executive,11176359,417574,4568268,High,"['Khar West', 'Mira Road']",6.13,2,11,Mumbai,Phone
+INV0053,40,Marketing Executive,7736518,1426446,3675155,High,['Powai'],13.61,8,4,Mumbai,Email
+INV0054,53,Sales Manager,12156611,2013491,2543516,Low,['Mira Road'],17.68,14,20,Mumbai,Email
+INV0055,58,Software Engineer,17206739,1916863,4090715,High,"['Vile Parle', 'Mira Road']",15.05,2,22,Mumbai,Phone
+INV0056,60,Software Engineer,4953486,950901,2464811,Low,['Khar West'],10.17,10,25,Mumbai,WhatsApp
+INV0057,39,Marketing Executive,18574540,606749,3546692,Low,"['Thane East', 'Khar West']",8.22,20,14,Mumbai,WhatsApp
+INV0058,52,Architect,7867079,1367931,3515860,High,"['Colaba', 'Goregaon East']",10.16,4,17,Mumbai,WhatsApp
+INV0059,30,Marketing Executive,15016784,2335816,4314155,Medium,"['Mira Road', 'Vile Parle']",8.44,10,18,Mumbai,WhatsApp
+INV0060,56,Accountant,11000636,606224,1039585,Medium,"['Ghatkopar', 'Juhu', 'Colaba']",7.77,20,8,Mumbai,WhatsApp
+INV0061,30,Architect,7628308,783182,1682527,Low,['Kurla'],13.57,8,25,Mumbai,Phone
+INV0062,34,Lawyer,6440301,1053045,3231044,High,"['Malad West', 'Andheri East']",15.09,20,8,Mumbai,Phone
+INV0063,31,Lawyer,8874653,672868,2304244,Low,['Mira Road'],13.21,17,25,Mumbai,WhatsApp
+INV0064,58,Consultant,8922263,1582660,1945199,High,['Chembur'],12.69,12,16,Mumbai,Phone
+INV0065,39,Architect,17987923,1423167,7989825,Low,['Colaba'],9.32,17,21,Mumbai,WhatsApp
+INV0066,36,Lawyer,18841896,3759023,8334216,Medium,"['Powai', 'Colaba']",6.24,7,15,Mumbai,WhatsApp
+INV0067,51,Sales Manager,6355372,120718,1909098,Low,"['Vile Parle', 'Worli']",17.13,3,16,Mumbai,Email
+INV0068,46,Consultant,15078804,1884004,3074160,Medium,['Worli'],7.44,3,16,Mumbai,Phone
+INV0069,60,Banker,10143708,1044201,4787332,High,"['Borivali West', 'Bandra East']",17.88,17,8,Mumbai,Email
+INV0070,54,Marketing Executive,3468173,195487,1483079,Low,"['Mira Road', 'Bandra East']",12.72,4,12,Mumbai,Phone
+INV0071,49,Lawyer,15099300,2076079,4782428,Medium,"['Goregaon East', 'Worli']",6.58,14,10,Mumbai,WhatsApp
+INV0072,57,Software Engineer,1909105,173431,816028,High,"['Santacruz East', 'Borivali West']",13.46,13,12,Mumbai,Phone
+INV0073,44,Architect,11368458,1751728,5372403,Low,"['Santacruz East', 'Fort', 'Borivali East']",11.31,10,23,Mumbai,Email
+INV0074,56,Marketing Executive,10526627,1640959,2953190,High,"['Goregaon West', 'Khar West', 'Chembur']",13.88,19,3,Mumbai,Phone
+INV0075,32,Accountant,17694980,896746,2180507,Medium,"['Santacruz East', 'Mulund', 'Colaba']",17.21,15,7,Mumbai,Phone
+INV0076,30,Lawyer,5766148,246805,1953254,High,['Lower Parel'],15.98,13,14,Mumbai,Phone
+INV0077,46,Architect,16316796,2389719,6054767,Medium,"['Goregaon West', 'Santacruz West']",16.08,17,3,Mumbai,Phone
+INV0078,35,Sales Manager,8186870,448893,2435598,High,"['Malad West', 'Bandra West']",10.03,12,4,Mumbai,Email
+INV0079,58,Entrepreneur,6050608,332352,2396308,Medium,"['Kurla', 'Santacruz West', 'Mulund']",14.55,14,11,Mumbai,WhatsApp
+INV0080,37,Lawyer,1484018,159324,509879,High,['Powai'],8.2,7,11,Mumbai,WhatsApp
+INV0081,38,Marketing Executive,3585250,451656,1470197,Medium,['Kurla'],14.3,2,8,Mumbai,Phone
+INV0082,43,Consultant,4966330,603363,1241134,Low,"['Goregaon West', 'Malad West']",12.1,13,9,Mumbai,Email
+INV0083,45,Consultant,14784070,2454861,4219362,Medium,"['Juhu', 'Kurla', 'Santacruz East']",11.5,8,11,Mumbai,Phone
+INV0084,55,Entrepreneur,11272592,1474764,4406088,Medium,['Mira Road'],11.34,15,15,Mumbai,Phone
+INV0085,31,Consultant,12406058,471710,2383552,High,"['Thane West', 'Vile Parle', 'Goregaon East']",12.81,19,14,Mumbai,WhatsApp
+INV0086,35,Marketing Executive,8936513,630279,1195787,Medium,"['Fort', 'Thane East', 'Thane West']",9.87,7,25,Mumbai,Email
+INV0087,58,Consultant,11124636,1008307,5216989,High,"['Lower Parel', 'Vile Parle']",9.61,13,3,Mumbai,Phone
+INV0088,37,Architect,2057187,308868,744214,High,['Dadar'],11.89,11,3,Mumbai,WhatsApp
+INV0089,31,Sales Manager,17602588,2509993,5102425,Medium,"['Mira Road', 'Chembur', 'Thane East']",13.49,9,6,Mumbai,Email
+INV0090,30,Banker,15808822,3126355,6823195,Low,"['Malad West', 'Kurla', 'Goregaon West']",9.65,2,15,Mumbai,WhatsApp
+INV0091,30,Banker,2909728,229977,1040847,Low,"['Goregaon East', 'Borivali West']",10.23,8,19,Mumbai,Email
+INV0092,60,Marketing Executive,15066801,286340,2008302,Low,"['Chembur', 'Lower Parel']",14.09,2,10,Mumbai,Phone
+INV0093,60,Marketing Executive,6576230,1138843,3498574,Low,"['Malad West', 'Dadar', 'Fort']",13.81,5,4,Mumbai,WhatsApp
+INV0094,48,Doctor,13795578,2392250,5968362,Medium,['Andheri East'],17.75,10,14,Mumbai,Phone
+INV0095,60,Consultant,13898310,292502,1181100,Low,['Khar West'],8.69,15,21,Mumbai,Phone
+INV0096,51,Entrepreneur,10173112,581238,3784910,Low,"['Colaba', 'Andheri East', 'Powai']",11.82,15,15,Mumbai,WhatsApp
+INV0097,38,Consultant,16607032,2079703,8251398,High,"['Colaba', 'Santacruz West', 'Lower Parel']",16.82,8,21,Mumbai,Phone
+INV0098,58,Doctor,8946520,1344465,2426965,High,"['Malad West', 'Mira Road']",8.95,16,8,Mumbai,Email
+INV0099,42,Marketing Executive,5842588,476700,1662944,Low,"['Chembur', 'Thane West', 'Powai']",12.0,12,10,Mumbai,Phone
+INV0100,37,Entrepreneur,14975025,2161382,4758850,Low,"['Lower Parel', 'Bandra West']",13.11,19,14,Mumbai,WhatsApp
+INV0101,46,Lawyer,11453669,199351,4730639,High,['Andheri East'],13.25,16,3,Mumbai,Email
+INV0102,52,Architect,1049368,182231,433810,Medium,"['Bandra West', 'Ghatkopar']",13.24,8,5,Mumbai,WhatsApp
+INV0103,46,Banker,19807426,2217348,7293575,High,['Vile Parle'],11.51,4,8,Mumbai,WhatsApp
+INV0104,46,Architect,9210634,1620732,3026136,Medium,"['Goregaon West', 'Malad West']",15.42,10,12,Mumbai,Phone
+INV0105,45,Entrepreneur,8250119,960564,4223511,Low,['Borivali East'],9.42,7,5,Mumbai,Phone
+INV0106,31,Marketing Executive,3367871,396329,822308,Low,"['Juhu', 'Borivali West', 'Fort']",6.17,14,25,Mumbai,Email
+INV0107,43,Accountant,15564970,1914899,4920085,Low,['Vile Parle'],14.97,15,7,Mumbai,WhatsApp
+INV0108,59,Sales Manager,9029511,521401,3947645,High,"['Khar West', 'Chembur', 'Powai']",12.8,20,20,Mumbai,Email
+INV0109,37,Banker,17324341,1384720,3193779,High,"['Mulund', 'Andheri East', 'Juhu']",10.81,16,14,Mumbai,WhatsApp
+INV0110,41,Architect,19113626,933690,5037235,High,"['Thane West', 'Dadar']",11.61,13,19,Mumbai,WhatsApp
+INV0111,34,Banker,9754456,853404,3067565,Medium,"['Thane West', 'Andheri East']",16.91,11,22,Mumbai,Email
+INV0112,35,Consultant,10794486,1726986,4798995,Low,"['Malad West', 'Bandra East', 'Dadar']",12.01,10,12,Mumbai,WhatsApp
+INV0113,34,Architect,14501413,2547006,4027817,High,"['Santacruz East', 'Mira Road', 'Colaba']",11.12,17,7,Mumbai,Email
+INV0114,54,Software Engineer,5410043,612075,2409978,Low,['Colaba'],13.23,7,12,Mumbai,WhatsApp
+INV0115,58,Lawyer,5886463,282472,2478912,Low,"['Dadar', 'Andheri East', 'Colaba']",15.59,12,12,Mumbai,Email
+INV0116,37,Consultant,19671122,2972286,5944951,Low,"['Goregaon East', 'Powai']",8.02,15,12,Mumbai,Phone
+INV0117,38,Software Engineer,2951848,495200,1303134,Low,"['Thane East', 'Goregaon East', 'Borivali West']",8.4,6,24,Mumbai,Email
+INV0118,41,Marketing Executive,5936751,253256,2131735,Low,"['Thane West', 'Thane East', 'Fort']",15.47,20,4,Mumbai,WhatsApp
+INV0119,52,Entrepreneur,4851548,926039,2081635,High,['Mulund'],11.11,10,9,Mumbai,WhatsApp
+INV0120,51,Architect,2429494,407887,726368,High,"['Kurla', 'Juhu', 'Goregaon West']",7.25,19,7,Mumbai,WhatsApp
+INV0121,58,Software Engineer,17891921,2080626,5677674,High,['Bandra West'],16.22,8,13,Mumbai,Email
+INV0122,35,Doctor,15322329,1309207,7062362,High,"['Juhu', 'Worli']",14.36,2,15,Mumbai,Phone
+INV0123,55,Software Engineer,1204817,239037,442032,High,"['Goregaon East', 'Kurla']",13.14,14,19,Mumbai,WhatsApp
+INV0124,55,Consultant,11546465,1802013,4841644,Low,"['Vile Parle', 'Khar West']",16.87,12,9,Mumbai,Phone
+INV0125,49,Entrepreneur,17648626,3185778,3399548,Low,['Malad West'],17.08,13,3,Mumbai,Phone
+INV0126,40,Banker,2716314,166876,606096,High,"['Ghatkopar', 'Powai']",10.0,17,6,Mumbai,Email
+INV0127,55,Sales Manager,12240956,1176536,5870844,High,"['Lower Parel', 'Bandra West']",7.61,1,18,Mumbai,Phone
+INV0128,30,Sales Manager,6570188,269624,2079603,Medium,['Lower Parel'],17.19,1,22,Mumbai,WhatsApp
+INV0129,30,Consultant,1932164,279074,630268,High,"['Goregaon West', 'Santacruz West']",13.38,18,8,Mumbai,WhatsApp
+INV0130,60,Banker,7161204,1285373,3128149,Medium,"['Bandra East', 'Worli']",6.29,11,7,Mumbai,Email
+INV0131,51,Banker,13851884,1062601,5276886,Medium,"['Vile Parle', 'Borivali West', 'Fort']",12.06,7,15,Mumbai,Phone
+INV0132,51,Accountant,16958106,810001,3012703,Low,"['Malad West', 'Thane West']",17.01,14,23,Mumbai,Email
+INV0133,46,Marketing Executive,17425907,420859,5799990,Medium,"['Santacruz West', 'Ghatkopar', 'Santacruz East']",11.8,11,24,Mumbai,Email
+INV0134,60,Architect,10308689,1832332,3844273,High,['Goregaon West'],6.66,5,20,Mumbai,Email
+INV0135,56,Software Engineer,9388841,1665751,4327041,Medium,"['Thane West', 'Goregaon West', 'Santacruz East']",16.91,3,17,Mumbai,Phone
+INV0136,42,Consultant,967334,186045,388609,Low,"['Andheri West', 'Goregaon West', 'Lower Parel']",15.13,0,18,Mumbai,Email
+INV0137,57,Accountant,3563516,489200,875018,Medium,['Kurla'],13.18,17,14,Mumbai,WhatsApp
+INV0138,37,Banker,17133537,3189218,9925090,Low,"['Bandra East', 'Andheri West', 'Santacruz West']",17.33,20,7,Mumbai,WhatsApp
+INV0139,38,Architect,15781625,713401,6592694,Low,"['Kurla', 'Mira Road', 'Chembur']",10.67,18,18,Mumbai,Email
+INV0140,41,Doctor,8589043,218246,2761467,Low,"['Fort', 'Khar West', 'Santacruz East']",10.83,19,24,Mumbai,Phone
+INV0141,31,Marketing Executive,14224045,252320,5881114,Medium,"['Ghatkopar', 'Borivali East', 'Andheri West']",7.19,17,15,Mumbai,Email
+INV0142,59,Entrepreneur,6425770,813916,1125429,Low,"['Santacruz West', 'Malad West']",15.21,7,7,Mumbai,WhatsApp
+INV0143,52,Sales Manager,2132430,376216,890075,Low,"['Borivali East', 'Andheri East']",17.46,13,17,Mumbai,Phone
+INV0144,45,Banker,10075093,1062880,2764892,High,"['Goregaon East', 'Borivali East']",15.48,3,9,Mumbai,Email
+INV0145,32,Marketing Executive,1881591,347523,715198,Medium,"['Chembur', 'Juhu']",6.74,14,4,Mumbai,Phone
+INV0146,49,Consultant,7410155,1463577,3088459,Medium,"['Andheri East', 'Thane West', 'Goregaon West']",13.9,15,7,Mumbai,Phone
+INV0147,31,Lawyer,1355437,129347,485632,Low,"['Andheri East', 'Kurla']",14.59,17,20,Mumbai,Phone
+INV0148,41,Architect,4945322,606725,2381290,Medium,"['Bandra West', 'Fort', 'Vile Parle']",17.04,18,9,Mumbai,Email
+INV0149,38,Sales Manager,4980410,274671,1614363,High,"['Khar West', 'Andheri West', 'Thane East']",14.6,13,25,Mumbai,WhatsApp
+INV0150,45,Lawyer,16281802,221194,5583098,Low,['Borivali East'],14.54,1,18,Mumbai,Email
+INV0151,57,Lawyer,9099121,1463160,2843772,Low,"['Khar West', 'Ghatkopar', 'Powai']",17.85,3,18,Mumbai,Email
+INV0152,52,Banker,9941435,1952035,2684752,Medium,"['Andheri East', 'Colaba']",16.43,6,5,Mumbai,Email
+INV0153,45,Architect,19370050,170169,5433033,High,"['Goregaon West', 'Andheri East']",6.44,18,8,Mumbai,Phone
+INV0154,47,Banker,3104157,615238,1269067,Low,['Thane East'],17.82,16,21,Mumbai,Phone
+INV0155,58,Accountant,13400990,941091,4188315,High,"['Ghatkopar', 'Juhu']",17.38,2,3,Mumbai,WhatsApp
+INV0156,49,Marketing Executive,884070,132832,422472,Medium,['Colaba'],14.81,16,5,Mumbai,WhatsApp
+INV0157,41,Lawyer,15008197,581987,2882402,High,['Kurla'],14.42,1,16,Mumbai,WhatsApp
+INV0158,51,Consultant,1461022,138564,382395,High,"['Powai', 'Juhu', 'Santacruz West']",9.88,13,15,Mumbai,Email
+INV0159,55,Software Engineer,8995097,1717487,4943769,Medium,"['Borivali East', 'Juhu']",11.52,16,15,Mumbai,Email
+INV0160,50,Doctor,5790694,700294,1152052,High,"['Malad West', 'Ghatkopar']",17.27,4,7,Mumbai,Email
+INV0161,57,Doctor,11496220,1106234,3822022,Medium,"['Andheri West', 'Borivali West']",9.14,20,21,Mumbai,Email
+INV0162,55,Accountant,4350923,802008,1447101,Low,"['Ghatkopar', 'Santacruz West']",15.06,7,12,Mumbai,WhatsApp
+INV0163,60,Entrepreneur,7289595,149556,3043834,High,"['Juhu', 'Andheri East', 'Santacruz West']",15.4,11,22,Mumbai,WhatsApp
+INV0164,54,Software Engineer,13279389,1965092,4085430,Low,"['Bandra West', 'Santacruz West']",6.98,14,10,Mumbai,WhatsApp
+INV0165,31,Sales Manager,16457481,330961,4509627,Medium,"['Chembur', 'Thane West']",12.11,2,12,Mumbai,Phone
+INV0166,50,Accountant,6783921,625500,956187,Low,['Thane West'],11.02,19,22,Mumbai,Phone
+INV0167,53,Accountant,12590950,626088,3825786,Low,"['Santacruz East', 'Mulund', 'Goregaon West']",8.26,18,11,Mumbai,Phone
+INV0168,44,Marketing Executive,6187299,513175,933153,Low,['Colaba'],7.3,20,4,Mumbai,Email
+INV0169,31,Lawyer,8552502,1388508,2017744,Medium,"['Malad West', 'Bandra West', 'Andheri West']",17.32,6,10,Mumbai,WhatsApp
+INV0170,42,Marketing Executive,4817178,344087,1451355,Medium,"['Thane West', 'Colaba', 'Malad West']",13.46,8,10,Mumbai,Email
+INV0171,38,Lawyer,12852891,257985,2619085,High,"['Bandra West', 'Juhu', 'Khar West']",11.4,20,18,Mumbai,WhatsApp
+INV0172,41,Doctor,17323617,2963636,9177542,Low,['Khar West'],13.45,18,13,Mumbai,Email
+INV0173,33,Architect,7645033,556159,993074,Low,"['Andheri West', 'Vile Parle', 'Colaba']",11.18,4,22,Mumbai,WhatsApp
+INV0174,48,Lawyer,8261460,140956,1035720,Low,"['Mulund', 'Powai', 'Chembur']",13.77,0,6,Mumbai,Phone
+INV0175,50,Lawyer,5808644,1092884,3236376,Low,"['Goregaon West', 'Thane East']",10.65,5,9,Mumbai,Phone
+INV0176,32,Consultant,18015710,2345556,5682662,Medium,"['Ghatkopar', 'Vile Parle', 'Thane West']",10.07,9,25,Mumbai,Email
+INV0177,52,Entrepreneur,19978773,588390,7989465,Low,"['Colaba', 'Goregaon West', 'Borivali East']",13.78,20,7,Mumbai,Email
+INV0178,39,Software Engineer,11888739,2149045,4428799,Medium,['Dadar'],9.49,15,17,Mumbai,WhatsApp
+INV0179,33,Entrepreneur,19162977,2298700,3794696,Medium,['Chembur'],14.42,15,10,Mumbai,WhatsApp
+INV0180,45,Entrepreneur,11668798,654663,3529705,Medium,"['Fort', 'Khar West']",12.42,6,22,Mumbai,Phone
+INV0181,49,Accountant,7209814,527893,848173,Medium,"['Borivali West', 'Mira Road']",6.56,16,18,Mumbai,Email
+INV0182,56,Sales Manager,16530342,3039121,6796597,High,"['Juhu', 'Goregaon West']",8.72,14,10,Mumbai,Email
+INV0183,31,Doctor,15964928,3130985,5796919,High,"['Borivali East', 'Bandra West']",8.28,16,17,Mumbai,Phone
+INV0184,46,Sales Manager,4298401,486494,1585323,Medium,['Mulund'],9.3,15,24,Mumbai,Phone
+INV0185,46,Consultant,6913642,709071,2447322,Low,"['Juhu', 'Mira Road', 'Chembur']",9.97,3,17,Mumbai,Phone
+INV0186,51,Software Engineer,1159928,156043,421979,Low,"['Mira Road', 'Ghatkopar']",7.5,12,20,Mumbai,Email
+INV0187,50,Software Engineer,5604678,977840,3150398,Low,"['Khar West', 'Santacruz East']",7.78,9,19,Mumbai,Email
+INV0188,36,Banker,10250673,1583530,4847218,Medium,"['Mira Road', 'Powai']",13.31,10,12,Mumbai,Email
+INV0189,42,Entrepreneur,3654336,342142,1151588,Medium,"['Borivali West', 'Thane West']",16.12,5,15,Mumbai,WhatsApp
+INV0190,53,Doctor,14792465,1500711,2664033,Medium,['Worli'],16.51,17,14,Mumbai,WhatsApp
+INV0191,57,Lawyer,18938868,251429,988056,Low,"['Fort', 'Andheri West']",13.97,10,15,Mumbai,Email
+INV0192,31,Entrepreneur,5495479,794001,2254055,Medium,['Andheri East'],9.48,1,23,Mumbai,Phone
+INV0193,58,Banker,4369293,857399,1618866,High,"['Bandra West', 'Dadar']",11.76,8,13,Mumbai,WhatsApp
+INV0194,36,Doctor,4070992,164523,733347,High,"['Chembur', 'Khar West']",16.84,4,11,Mumbai,WhatsApp
+INV0195,49,Entrepreneur,13376383,588264,1072569,Low,"['Lower Parel', 'Bandra West']",15.39,4,5,Mumbai,Phone
+INV0196,41,Software Engineer,5141564,576653,1606802,High,"['Bandra East', 'Andheri West', 'Goregaon West']",16.77,16,11,Mumbai,WhatsApp
+INV0197,40,Doctor,4493474,205627,1083419,Medium,['Powai'],17.48,17,9,Mumbai,Email
+INV0198,55,Sales Manager,7918158,850306,3794910,High,"['Fort', 'Andheri West', 'Santacruz East']",17.53,0,5,Mumbai,Phone
+INV0199,60,Entrepreneur,7376785,418613,2330493,High,"['Chembur', 'Goregaon East', 'Dadar']",6.58,10,3,Mumbai,Email
+INV0200,53,Doctor,744031,107166,390062,High,['Andheri East'],10.64,11,23,Mumbai,Email
+INV0201,40,Software Engineer,16541699,1938853,4363784,High,"['Goregaon West', 'Ghatkopar', 'Kurla']",7.4,16,22,Mumbai,WhatsApp
+INV0202,36,Software Engineer,16875026,2745697,9146058,High,['Malad West'],10.3,5,14,Mumbai,Phone
+INV0203,30,Consultant,16780908,1460065,5177951,Low,['Goregaon East'],16.1,19,3,Mumbai,Phone
+INV0204,34,Sales Manager,989500,185487,532108,Medium,"['Colaba', 'Mulund', 'Santacruz East']",6.41,7,25,Mumbai,WhatsApp
+INV0205,59,Architect,11817530,2325020,4188548,Medium,"['Borivali East', 'Thane East', 'Fort']",8.01,18,15,Mumbai,Phone
+INV0206,41,Software Engineer,1102405,184468,513878,Low,"['Colaba', 'Worli', 'Goregaon East']",7.28,16,24,Mumbai,WhatsApp
+INV0207,36,Sales Manager,1207651,133557,565952,High,"['Andheri East', 'Bandra East']",14.84,5,15,Mumbai,Phone
+INV0208,56,Banker,10684555,128235,3070601,Low,"['Worli', 'Malad West', 'Chembur']",13.84,13,24,Mumbai,WhatsApp
+INV0209,48,Marketing Executive,19049850,773831,1753093,High,"['Goregaon West', 'Thane West']",10.3,19,10,Mumbai,Phone
+INV0210,58,Entrepreneur,9295612,1745465,4831144,Low,"['Santacruz East', 'Colaba']",7.83,11,11,Mumbai,WhatsApp
+INV0211,32,Entrepreneur,3471986,101227,1172136,Medium,['Mira Road'],7.69,6,5,Mumbai,WhatsApp
+INV0212,41,Accountant,12197213,537988,1550404,Low,"['Santacruz East', 'Bandra West']",8.45,1,22,Mumbai,Phone
+INV0213,57,Lawyer,14873602,693279,4657296,Low,"['Santacruz East', 'Bandra East']",7.46,3,14,Mumbai,Phone
+INV0214,35,Accountant,19259622,3191564,5499672,Low,"['Thane West', 'Andheri West']",10.83,2,7,Mumbai,Phone
+INV0215,37,Marketing Executive,11909936,394897,4267098,Medium,"['Khar West', 'Kurla']",10.0,7,11,Mumbai,Email
+INV0216,54,Doctor,8175180,509684,1356362,Medium,"['Andheri West', 'Thane East', 'Worli']",17.5,11,11,Mumbai,Phone
+INV0217,37,Lawyer,14173010,2793386,3151945,High,"['Goregaon West', 'Borivali West']",9.92,11,17,Mumbai,Phone
+INV0218,56,Lawyer,14702584,209194,5477349,Medium,['Khar West'],13.46,11,13,Mumbai,Email
+INV0219,34,Accountant,8402509,325821,2577129,High,"['Goregaon West', 'Colaba']",17.81,7,9,Mumbai,WhatsApp
+INV0220,57,Architect,9645714,421874,1610574,High,"['Dadar', 'Andheri East', 'Mulund']",6.62,2,3,Mumbai,WhatsApp
+INV0221,40,Marketing Executive,14421609,1225786,6157076,High,"['Khar West', 'Vile Parle', 'Andheri West']",13.74,2,21,Mumbai,WhatsApp
+INV0222,34,Marketing Executive,15401451,1094900,3173921,High,"['Borivali East', 'Goregaon West', 'Santacruz East']",11.26,20,6,Mumbai,WhatsApp
+INV0223,36,Accountant,12708546,842985,2657238,Low,['Andheri West'],6.96,2,24,Mumbai,Phone
+INV0224,58,Entrepreneur,1838615,224023,716609,Medium,['Ghatkopar'],13.99,1,23,Mumbai,Email
+INV0225,42,Sales Manager,2829598,204448,595249,Medium,"['Juhu', 'Goregaon East']",17.1,16,13,Mumbai,WhatsApp
+INV0226,40,Accountant,9531289,1472977,3397087,Medium,['Mira Road'],14.95,20,13,Mumbai,Email
+INV0227,60,Architect,5715883,682242,1969881,Low,"['Powai', 'Borivali East', 'Worli']",9.59,17,16,Mumbai,Phone
+INV0228,52,Doctor,14477221,2277397,5775239,High,['Lower Parel'],8.8,14,18,Mumbai,Email
+INV0229,56,Sales Manager,13480767,1792628,6592155,Low,"['Powai', 'Andheri West', 'Thane East']",7.83,2,5,Mumbai,Phone
+INV0230,51,Sales Manager,12287937,1435771,5605909,Low,"['Goregaon East', 'Vile Parle']",15.62,6,23,Mumbai,WhatsApp
+INV0231,42,Banker,7212270,175839,746652,Low,"['Goregaon West', 'Kurla']",6.59,0,18,Mumbai,Email
+INV0232,54,Sales Manager,8877133,970922,2518485,High,['Borivali West'],7.7,10,16,Mumbai,Phone
+INV0233,37,Accountant,14522841,1040591,5053877,High,"['Goregaon East', 'Santacruz West']",11.34,17,12,Mumbai,WhatsApp
+INV0234,33,Sales Manager,18912478,2719852,5277170,Low,"['Andheri West', 'Ghatkopar']",15.22,15,15,Mumbai,Email
+INV0235,37,Marketing Executive,15961426,2860691,4230755,High,"['Khar West', 'Mira Road']",17.77,5,7,Mumbai,WhatsApp
+INV0236,53,Architect,8590834,1330431,3005175,Medium,"['Goregaon West', 'Ghatkopar', 'Malad West']",11.5,4,23,Mumbai,WhatsApp
+INV0237,31,Banker,10373979,1869901,5657689,Low,"['Andheri East', 'Vile Parle', 'Goregaon West']",6.19,0,15,Mumbai,Phone
+INV0238,54,Marketing Executive,5340916,945058,2098825,Medium,['Chembur'],13.02,13,13,Mumbai,Phone
+INV0239,59,Accountant,9758077,830580,3242073,Low,"['Powai', 'Bandra West']",15.91,15,7,Mumbai,Phone
+INV0240,36,Accountant,15028816,931385,1931297,Low,"['Fort', 'Thane East']",17.97,9,12,Mumbai,Phone
+INV0241,47,Software Engineer,10306313,1141938,4549790,High,"['Andheri East', 'Santacruz East', 'Kurla']",9.0,9,9,Mumbai,Email
+INV0242,41,Banker,7042967,107253,1657780,Low,"['Goregaon East', 'Goregaon West', 'Dadar']",9.64,4,6,Mumbai,Email
+INV0243,58,Lawyer,19364675,2102505,4088897,Low,"['Borivali West', 'Worli']",15.83,17,23,Mumbai,WhatsApp
+INV0244,58,Architect,9215671,1659050,3609016,High,"['Goregaon East', 'Borivali East']",8.46,11,8,Mumbai,Email
+INV0245,57,Accountant,18487215,2608297,6677674,High,"['Borivali East', 'Khar West', 'Lower Parel']",11.76,20,4,Mumbai,Phone
+INV0246,52,Banker,19240640,2344624,6156372,High,"['Borivali East', 'Chembur']",17.44,10,11,Mumbai,WhatsApp
+INV0247,36,Software Engineer,15051155,328330,3713404,High,"['Lower Parel', 'Kurla', 'Goregaon East']",10.25,16,9,Mumbai,Phone
+INV0248,43,Doctor,6516190,1014474,1424893,Low,"['Ghatkopar', 'Borivali East', 'Goregaon East']",6.53,17,16,Mumbai,WhatsApp
+INV0249,40,Banker,4900309,490769,2421948,Medium,"['Goregaon East', 'Thane West', 'Fort']",16.81,18,13,Mumbai,Email
+INV0250,49,Marketing Executive,10966409,1011492,4610251,Medium,['Goregaon East'],14.47,6,9,Mumbai,WhatsApp
+INV0251,58,Banker,10721622,1017395,4922483,Medium,['Colaba'],15.73,20,15,Mumbai,Email
+INV0252,50,Sales Manager,17013239,1968391,3847387,Medium,"['Worli', 'Bandra West', 'Santacruz East']",11.37,8,6,Mumbai,Email
+INV0253,37,Doctor,8096335,1228109,3990503,Low,['Chembur'],9.55,20,16,Mumbai,Email
+INV0254,38,Software Engineer,872752,134760,431348,High,"['Santacruz East', 'Worli', 'Kurla']",12.35,7,13,Mumbai,WhatsApp
+INV0255,41,Architect,6479767,121206,2550835,High,"['Malad West', 'Goregaon West', 'Khar West']",10.43,17,24,Mumbai,Phone
+INV0256,38,Consultant,4971146,372663,882180,Medium,"['Santacruz West', 'Dadar', 'Thane West']",10.76,12,21,Mumbai,Phone
+INV0257,48,Lawyer,6385894,647583,1946845,Medium,"['Bandra West', 'Borivali West', 'Santacruz West']",11.85,4,11,Mumbai,WhatsApp
+INV0258,47,Accountant,12183521,1663179,1971818,Low,"['Goregaon East', 'Thane West']",10.44,2,5,Mumbai,Phone
+INV0259,31,Marketing Executive,2975239,583964,1685315,High,['Khar West'],17.72,2,18,Mumbai,WhatsApp
+INV0260,39,Consultant,12831545,415092,5156278,Medium,"['Worli', 'Malad West']",7.66,3,14,Mumbai,WhatsApp
+INV0261,36,Banker,5795558,402435,1855379,Medium,"['Powai', 'Santacruz East']",12.17,5,8,Mumbai,WhatsApp
+INV0262,50,Architect,2598175,478393,1286937,Medium,"['Vile Parle', 'Borivali East', 'Lower Parel']",7.99,5,6,Mumbai,Phone
+INV0263,30,Consultant,15841851,196653,1536525,High,"['Mira Road', 'Dadar']",7.36,1,24,Mumbai,Phone
+INV0264,31,Consultant,17772015,1928804,2451188,Medium,"['Chembur', 'Thane West']",11.89,4,18,Mumbai,WhatsApp
+INV0265,49,Lawyer,8136413,1304168,4179811,High,['Juhu'],15.61,19,7,Mumbai,WhatsApp
+INV0266,53,Entrepreneur,5998689,399575,2690972,Medium,"['Thane East', 'Khar West', 'Lower Parel']",14.65,7,11,Mumbai,Phone
+INV0267,42,Doctor,5772926,705008,1580125,Low,"['Borivali West', 'Juhu', 'Santacruz West']",12.04,12,11,Mumbai,Email
+INV0268,33,Entrepreneur,2492848,362442,607204,Medium,"['Worli', 'Santacruz East', 'Fort']",16.7,8,9,Mumbai,Email
+INV0269,33,Doctor,12521114,727738,5404328,Medium,"['Andheri East', 'Goregaon East']",17.37,3,8,Mumbai,Phone
+INV0270,47,Software Engineer,15292692,316352,2208294,High,"['Santacruz West', 'Malad West']",12.97,15,22,Mumbai,WhatsApp
+INV0271,42,Entrepreneur,7608695,946776,1678373,Low,['Ghatkopar'],15.43,5,10,Mumbai,WhatsApp
+INV0272,43,Banker,11047432,1412541,5791532,Medium,"['Mulund', 'Thane West']",7.34,16,5,Mumbai,Email
+INV0273,31,Accountant,1622716,163958,555679,High,"['Vile Parle', 'Chembur']",10.75,5,20,Mumbai,Phone
+INV0274,52,Architect,11129697,454933,799939,Medium,"['Chembur', 'Kurla', 'Juhu']",17.3,12,25,Mumbai,Email
+INV0275,47,Sales Manager,8875157,1100109,2801639,High,"['Fort', 'Thane West', 'Andheri West']",8.44,14,15,Mumbai,Phone
+INV0276,41,Accountant,4048684,457979,870448,Medium,"['Kurla', 'Goregaon West']",14.4,19,22,Mumbai,WhatsApp
+INV0277,41,Banker,12675964,2052116,4890146,Low,"['Andheri West', 'Malad West', 'Worli']",12.65,14,7,Mumbai,Phone
+INV0278,50,Architect,3310372,538773,820367,Low,"['Bandra East', 'Khar West']",9.37,18,25,Mumbai,Phone
+INV0279,57,Sales Manager,7936973,500158,1390067,Low,"['Fort', 'Vile Parle', 'Borivali East']",10.24,10,3,Mumbai,Phone
+INV0280,37,Entrepreneur,18636591,3025921,7565441,High,"['Bandra East', 'Kurla', 'Vile Parle']",15.71,14,3,Mumbai,WhatsApp
+INV0281,43,Architect,9859961,1022025,4577719,Low,"['Thane West', 'Thane East']",11.48,9,21,Mumbai,WhatsApp
+INV0282,32,Consultant,15752126,2734238,3288816,Low,['Andheri West'],9.5,10,5,Mumbai,Email
+INV0283,37,Doctor,6239364,893933,1635145,High,['Santacruz East'],7.97,6,8,Mumbai,Email
+INV0284,37,Banker,18563519,328019,2101047,Medium,"['Goregaon East', 'Kurla']",17.18,0,13,Mumbai,WhatsApp
+INV0285,34,Entrepreneur,19942750,2910113,9760444,High,"['Lower Parel', 'Worli']",8.96,9,24,Mumbai,Email
+INV0286,30,Banker,6103594,1112601,2179495,Medium,"['Chembur', 'Malad West']",16.18,10,4,Mumbai,Email
+INV0287,57,Doctor,13880531,526266,5330834,High,['Worli'],16.85,9,7,Mumbai,WhatsApp
+INV0288,58,Software Engineer,11928687,406414,3658729,High,['Vile Parle'],9.59,3,12,Mumbai,Phone
+INV0289,53,Software Engineer,4216031,533413,2103709,Medium,"['Bandra East', 'Goregaon West']",6.76,15,25,Mumbai,Phone
+INV0290,34,Marketing Executive,10113646,197186,4118224,High,"['Lower Parel', 'Thane East']",15.46,5,23,Mumbai,Phone
+INV0291,56,Architect,4801157,253576,1807756,High,"['Thane West', 'Ghatkopar', 'Santacruz West']",7.3,14,10,Mumbai,Phone
+INV0292,31,Architect,9515082,982871,3804941,High,"['Powai', 'Borivali East', 'Borivali West']",8.42,19,24,Mumbai,WhatsApp
+INV0293,42,Architect,6558277,1267955,2145596,High,['Thane East'],8.62,12,21,Mumbai,Phone
+INV0294,36,Banker,14721167,2074673,4168290,Low,"['Mira Road', 'Borivali East']",13.55,20,20,Mumbai,Email
+INV0295,38,Consultant,14463215,770816,6036444,Low,['Thane East'],12.15,4,5,Mumbai,Email
+INV0296,54,Doctor,9574034,1523914,3136516,High,['Bandra East'],11.04,4,7,Mumbai,WhatsApp
+INV0297,55,Entrepreneur,4835853,522272,929488,High,"['Juhu', 'Lower Parel']",15.78,17,19,Mumbai,Email
+INV0298,53,Marketing Executive,1481452,107245,330565,Low,"['Borivali East', 'Chembur']",16.25,14,13,Mumbai,WhatsApp
+INV0299,32,Marketing Executive,15061132,1934238,6139877,Low,"['Santacruz West', 'Lower Parel']",13.32,17,14,Mumbai,Email
+INV0300,58,Banker,5957387,1034345,2522489,Low,"['Colaba', 'Bandra West', 'Juhu']",17.89,11,23,Mumbai,Email
+INV0301,35,Sales Manager,19430388,307363,3107130,Medium,['Mulund'],10.85,1,6,Mumbai,Email
+INV0302,54,Banker,8470749,1116056,3949250,High,"['Vile Parle', 'Kurla', 'Lower Parel']",7.61,17,15,Mumbai,Email
+INV0303,40,Accountant,10251064,1109001,3085897,Low,"['Bandra East', 'Thane East']",8.68,7,15,Mumbai,WhatsApp
+INV0304,34,Doctor,11341141,540253,2488985,Medium,"['Vile Parle', 'Bandra West', 'Borivali East']",8.03,4,10,Mumbai,WhatsApp
+INV0305,56,Software Engineer,4897828,499049,1844342,Medium,['Chembur'],8.04,4,6,Mumbai,Email
+INV0306,59,Banker,11527402,1175674,3301001,High,['Juhu'],12.55,13,25,Mumbai,Phone
+INV0307,30,Architect,13859817,1725403,2622489,Medium,"['Kurla', 'Borivali East', 'Colaba']",15.42,15,18,Mumbai,Phone
+INV0308,43,Lawyer,15708455,1058445,3717010,Medium,"['Juhu', 'Mulund']",15.9,15,6,Mumbai,WhatsApp
+INV0309,55,Doctor,17869913,1903571,6221007,Medium,"['Malad West', 'Chembur']",15.82,11,5,Mumbai,Email
+INV0310,32,Software Engineer,4659816,598122,2451170,Medium,['Bandra West'],13.53,20,23,Mumbai,Phone
+INV0311,39,Banker,11539605,1583747,4499860,High,"['Ghatkopar', 'Borivali West']",14.19,17,16,Mumbai,WhatsApp
+INV0312,34,Marketing Executive,3259167,256107,1206687,Low,['Ghatkopar'],15.72,4,25,Mumbai,WhatsApp
+INV0313,38,Entrepreneur,2488859,148412,706294,Medium,"['Dadar', 'Vile Parle', 'Lower Parel']",11.99,5,7,Mumbai,Phone
+INV0314,37,Software Engineer,13023204,1941071,6645707,Low,['Thane West'],8.21,2,16,Mumbai,Email
+INV0315,42,Sales Manager,5576047,793211,1052521,Low,"['Powai', 'Ghatkopar']",13.21,0,8,Mumbai,Phone
+INV0316,34,Consultant,7037878,1184252,2429823,High,"['Vile Parle', 'Bandra West']",12.05,19,14,Mumbai,Email
+INV0317,44,Banker,997462,104700,376833,Low,"['Chembur', 'Goregaon West', 'Ghatkopar']",17.54,18,19,Mumbai,WhatsApp
+INV0318,56,Consultant,581371,108547,323576,Low,"['Santacruz East', 'Malad West', 'Thane West']",15.7,12,10,Mumbai,WhatsApp
+INV0319,55,Sales Manager,4520870,748810,1741104,High,"['Lower Parel', 'Chembur', 'Fort']",12.87,2,20,Mumbai,Phone
+INV0320,60,Sales Manager,10935050,1167074,2938302,Medium,"['Andheri East', 'Powai', 'Bandra West']",13.11,8,9,Mumbai,Phone
+INV0321,40,Accountant,19109183,501187,1471806,Medium,"['Worli', 'Borivali East']",11.94,16,7,Mumbai,Email
+INV0322,57,Entrepreneur,19739786,1028491,1627716,High,"['Goregaon East', 'Borivali West']",6.37,14,21,Mumbai,Phone
+INV0323,31,Banker,15691526,605695,5157386,Low,"['Vile Parle', 'Chembur', 'Lower Parel']",6.88,20,11,Mumbai,Phone
+INV0324,57,Marketing Executive,8186621,1307647,1903410,High,"['Borivali West', 'Vile Parle', 'Santacruz West']",12.07,17,15,Mumbai,WhatsApp
+INV0325,45,Banker,15198630,2215675,5323813,Medium,"['Ghatkopar', 'Borivali East']",10.58,0,12,Mumbai,WhatsApp
+INV0326,38,Banker,16837840,831491,1543478,High,['Mira Road'],15.45,20,23,Mumbai,WhatsApp
+INV0327,35,Entrepreneur,11647424,958921,2771438,Low,['Bandra West'],9.53,18,9,Mumbai,Phone
+INV0328,46,Banker,11956429,930525,4667722,Medium,['Andheri West'],8.87,11,11,Mumbai,Email
+INV0329,33,Entrepreneur,15941606,284713,5721494,Low,"['Colaba', 'Bandra West', 'Fort']",15.02,11,3,Mumbai,Email
+INV0330,53,Accountant,1277216,178248,586242,Low,"['Dadar', 'Khar West']",7.33,7,8,Mumbai,WhatsApp
+INV0331,60,Entrepreneur,3365565,576210,1660893,Low,"['Khar West', 'Kurla']",11.03,18,14,Mumbai,Email
+INV0332,35,Banker,17780189,2380573,4042178,Low,['Juhu'],6.97,7,14,Mumbai,Phone
+INV0333,37,Lawyer,9597187,640702,1861453,Low,"['Worli', 'Borivali West', 'Dadar']",14.56,14,24,Mumbai,Phone
+INV0334,54,Software Engineer,14644790,605740,5760792,Low,"['Khar West', 'Bandra East']",9.03,5,10,Mumbai,Phone
+INV0335,54,Marketing Executive,10297872,1770792,5140821,Low,"['Khar West', 'Mulund', 'Malad West']",15.89,11,20,Mumbai,WhatsApp
+INV0336,45,Lawyer,10856658,1096797,2557194,High,"['Dadar', 'Juhu']",9.39,8,13,Mumbai,Phone
+INV0337,41,Consultant,15502782,432761,2747147,Low,"['Vile Parle', 'Bandra East']",14.97,10,18,Mumbai,WhatsApp
+INV0338,50,Accountant,1980503,173820,587124,High,"['Borivali West', 'Malad West']",16.28,10,24,Mumbai,WhatsApp
+INV0339,32,Sales Manager,4583493,870184,1997036,High,['Juhu'],9.65,16,15,Mumbai,Email
+INV0340,58,Consultant,8260300,1368785,1859538,Medium,['Kurla'],9.78,8,3,Mumbai,Phone
+INV0341,43,Marketing Executive,14262911,1936777,5200417,Low,"['Vile Parle', 'Malad West']",14.46,10,19,Mumbai,Phone
+INV0342,33,Doctor,11532262,1918780,4410865,Low,['Santacruz West'],6.33,8,19,Mumbai,WhatsApp
+INV0343,33,Sales Manager,18953247,131831,438687,Low,"['Borivali East', 'Juhu', 'Santacruz West']",6.72,13,16,Mumbai,Phone
+INV0344,40,Architect,15685595,2839098,3469773,High,"['Juhu', 'Dadar']",8.37,15,11,Mumbai,Phone
+INV0345,42,Software Engineer,3943147,159779,360192,Low,"['Malad West', 'Borivali West']",8.76,19,25,Mumbai,Email
+INV0346,53,Software Engineer,3536784,110905,1062433,High,"['Kurla', 'Andheri East']",8.32,0,5,Mumbai,WhatsApp
+INV0347,34,Banker,13050047,1035014,3404832,Medium,['Dadar'],17.93,2,25,Mumbai,WhatsApp
+INV0348,51,Software Engineer,18260802,1876846,8355517,Medium,['Mira Road'],9.49,2,4,Mumbai,WhatsApp
+INV0349,47,Lawyer,5239046,1025558,2739108,Medium,"['Santacruz West', 'Malad West', 'Mira Road']",14.87,2,21,Mumbai,WhatsApp
+INV0350,31,Doctor,2002629,136261,763677,High,['Kurla'],14.83,18,25,Mumbai,Email
+INV0351,54,Banker,8078384,309754,2857125,High,"['Thane West', 'Ghatkopar']",8.78,13,16,Mumbai,Email
+INV0352,54,Doctor,15782931,1493446,6359255,Low,"['Kurla', 'Ghatkopar']",15.81,4,19,Mumbai,Email
+INV0353,60,Architect,12439290,1955082,5328337,Medium,"['Powai', 'Borivali East', 'Kurla']",14.4,17,8,Mumbai,Phone
+INV0354,55,Architect,13392853,1606384,6704735,Medium,"['Dadar', 'Fort', 'Ghatkopar']",16.87,3,25,Mumbai,Email
+INV0355,58,Marketing Executive,9855011,786838,1359049,High,['Malad West'],14.78,6,12,Mumbai,WhatsApp
+INV0356,35,Consultant,2183628,351222,1070275,Low,"['Santacruz West', 'Kurla', 'Andheri East']",6.26,5,15,Mumbai,Phone
+INV0357,52,Accountant,6611211,907216,2459017,Medium,"['Vile Parle', 'Mulund']",9.95,1,4,Mumbai,Phone
+INV0358,55,Software Engineer,15014416,2162087,4952747,High,"['Bandra West', 'Mira Road', 'Goregaon East']",7.42,1,25,Mumbai,Email
+INV0359,49,Architect,12136189,1339373,2665797,Low,"['Malad West', 'Thane West']",11.35,8,3,Mumbai,WhatsApp
+INV0360,39,Architect,19458398,2930508,7147588,Low,"['Fort', 'Mira Road', 'Thane East']",16.95,2,5,Mumbai,Phone
+INV0361,44,Sales Manager,8360190,306741,1848674,Low,['Goregaon East'],12.86,2,14,Mumbai,WhatsApp
+INV0362,44,Doctor,14391588,615378,3314121,High,"['Kurla', 'Mulund', 'Thane West']",12.1,1,6,Mumbai,Email
+INV0363,36,Entrepreneur,15493764,1665915,5623115,Medium,['Powai'],8.07,13,24,Mumbai,WhatsApp
+INV0364,40,Entrepreneur,6164854,1042919,2220760,High,"['Bandra West', 'Andheri East']",11.61,9,25,Mumbai,WhatsApp
+INV0365,51,Sales Manager,2931688,317162,700850,Medium,"['Borivali East', 'Lower Parel', 'Bandra West']",13.73,4,18,Mumbai,Phone
+INV0366,32,Lawyer,14074512,1012927,6175234,Medium,['Goregaon East'],9.92,20,20,Mumbai,Phone
+INV0367,45,Banker,17101258,1495389,2127529,Low,['Dadar'],17.61,2,23,Mumbai,WhatsApp
+INV0368,43,Entrepreneur,3285384,393004,1371656,High,"['Worli', 'Fort', 'Thane West']",10.82,2,24,Mumbai,WhatsApp
+INV0369,57,Banker,5224177,1031134,2631445,Low,['Mulund'],16.56,4,15,Mumbai,Phone
+INV0370,42,Sales Manager,5695141,370293,1454120,High,"['Colaba', 'Juhu', 'Thane West']",8.12,1,4,Mumbai,WhatsApp
+INV0371,30,Marketing Executive,15541845,2741887,4523719,High,"['Goregaon East', 'Colaba', 'Chembur']",11.9,15,23,Mumbai,Phone
+INV0372,37,Accountant,7512288,657875,2906025,Low,"['Goregaon East', 'Khar West']",14.08,14,23,Mumbai,Phone
+INV0373,60,Accountant,1986045,290892,1070118,Medium,"['Juhu', 'Borivali East', 'Borivali West']",7.43,16,21,Mumbai,WhatsApp
+INV0374,41,Architect,16125471,1345138,4955153,High,"['Goregaon East', 'Worli']",9.49,20,5,Mumbai,Phone
+INV0375,35,Accountant,19112990,2177805,3311108,High,"['Thane East', 'Mira Road']",11.83,14,12,Mumbai,WhatsApp
+INV0376,33,Doctor,3787086,695319,1271091,Medium,['Borivali West'],9.02,13,18,Mumbai,Email
+INV0377,48,Banker,10018962,1103745,3730887,Medium,['Andheri East'],10.56,0,11,Mumbai,Email
+INV0378,53,Doctor,8103715,104938,1664177,Low,['Kurla'],11.73,1,25,Mumbai,Email
+INV0379,58,Doctor,5047695,451284,2294952,Medium,"['Andheri West', 'Thane East']",6.54,20,5,Mumbai,WhatsApp
+INV0380,33,Architect,16425167,1093635,3632424,High,['Bandra East'],10.66,5,10,Mumbai,WhatsApp
+INV0381,52,Consultant,16699389,1186783,2101076,High,"['Lower Parel', 'Thane West', 'Bandra West']",13.85,9,15,Mumbai,Email
+INV0382,42,Sales Manager,16315675,951122,4387777,Medium,"['Worli', 'Powai', 'Thane West']",12.18,0,18,Mumbai,Email
+INV0383,59,Banker,8770186,1294953,2453606,Medium,['Andheri East'],16.28,12,7,Mumbai,WhatsApp
+INV0384,41,Architect,13997930,1959064,5282490,Medium,"['Malad West', 'Lower Parel']",16.39,15,13,Mumbai,Phone
+INV0385,53,Marketing Executive,18828902,854209,5790381,Low,"['Thane East', 'Mulund']",9.08,8,24,Mumbai,WhatsApp
+INV0386,58,Lawyer,9838192,1957301,5335834,Medium,"['Santacruz West', 'Borivali West']",11.4,2,20,Mumbai,Email
+INV0387,53,Sales Manager,19777746,2584755,5805578,Medium,"['Worli', 'Bandra East']",16.7,2,16,Mumbai,WhatsApp
+INV0388,36,Banker,1835096,362648,693621,High,"['Thane West', 'Worli']",16.19,14,20,Mumbai,Email
+INV0389,54,Consultant,3919007,313782,1366189,Low,"['Mulund', 'Ghatkopar']",9.75,4,18,Mumbai,WhatsApp
+INV0390,34,Banker,10524078,111754,4020908,Low,['Mulund'],17.75,0,14,Mumbai,WhatsApp
+INV0391,30,Sales Manager,5747744,1139515,2681356,High,['Dadar'],8.04,11,3,Mumbai,Email
+INV0392,34,Software Engineer,3283413,317368,697709,High,"['Fort', 'Khar West']",11.78,1,14,Mumbai,Phone
+INV0393,47,Consultant,3344240,232983,1278296,Low,"['Santacruz West', 'Dadar', 'Bandra West']",9.76,19,24,Mumbai,WhatsApp
+INV0394,35,Lawyer,10068517,903040,1821607,High,['Goregaon West'],10.83,8,21,Mumbai,WhatsApp
+INV0395,41,Sales Manager,15679992,1811919,5863753,High,['Worli'],12.95,8,5,Mumbai,Phone
+INV0396,48,Architect,8269110,1246617,1697585,Low,['Santacruz West'],11.26,19,20,Mumbai,WhatsApp
+INV0397,51,Sales Manager,14714143,307704,6063398,Medium,['Thane West'],8.38,4,14,Mumbai,Phone
+INV0398,46,Architect,12074434,1870407,5807780,Low,"['Goregaon West', 'Juhu']",17.72,11,25,Mumbai,Phone
+INV0399,41,Architect,18835848,2340841,9469744,High,"['Dadar', 'Bandra East']",7.83,3,14,Mumbai,WhatsApp
+INV0400,54,Doctor,3378682,658802,1425599,High,"['Colaba', 'Thane East']",14.73,16,7,Mumbai,Phone
+INV0401,31,Software Engineer,18452313,2164766,7121212,Medium,"['Kurla', 'Malad West']",14.66,16,25,Mumbai,Phone
+INV0402,53,Banker,17100506,706234,3268710,Low,['Khar West'],13.63,5,7,Mumbai,Phone
+INV0403,43,Sales Manager,5318492,1060449,1903921,High,"['Goregaon West', 'Goregaon East', 'Fort']",6.3,7,4,Mumbai,Email
+INV0404,41,Doctor,9223937,1656387,2705533,Medium,['Chembur'],9.25,15,23,Mumbai,WhatsApp
+INV0405,38,Doctor,17355955,2529720,8158717,High,"['Thane East', 'Lower Parel', 'Ghatkopar']",10.46,6,3,Mumbai,WhatsApp
+INV0406,49,Doctor,10770501,1271791,3987472,High,"['Borivali West', 'Bandra West']",16.06,5,23,Mumbai,WhatsApp
+INV0407,30,Doctor,17197778,1125211,3834856,Low,"['Lower Parel', 'Thane West']",9.13,18,6,Mumbai,Phone
+INV0408,31,Marketing Executive,7695784,882798,2951938,High,"['Thane East', 'Mira Road', 'Bandra West']",9.44,12,3,Mumbai,WhatsApp
+INV0409,45,Consultant,5514070,706981,1000596,Low,"['Borivali East', 'Dadar']",11.49,7,11,Mumbai,Phone
+INV0410,52,Banker,2339066,439367,1009608,Low,['Bandra East'],6.56,15,3,Mumbai,WhatsApp
+INV0411,58,Entrepreneur,13212501,918345,2067984,High,['Bandra East'],11.38,17,3,Mumbai,Email
+INV0412,46,Software Engineer,14823805,1271439,3260246,Low,"['Santacruz West', 'Santacruz East', 'Kurla']",9.92,5,12,Mumbai,Email
+INV0413,35,Sales Manager,19671896,2199383,3113812,Low,"['Powai', 'Bandra West', 'Kurla']",8.32,4,14,Mumbai,Phone
+INV0414,32,Accountant,11451924,262044,4350760,Low,['Bandra East'],6.93,2,4,Mumbai,WhatsApp
+INV0415,34,Lawyer,9158969,1078397,2899420,Low,"['Vile Parle', 'Fort']",8.24,13,22,Mumbai,Email
+INV0416,38,Entrepreneur,11940781,1883486,6344887,High,"['Santacruz West', 'Bandra West', 'Powai']",16.11,9,9,Mumbai,Email
+INV0417,51,Consultant,7060672,1086684,3576419,High,"['Bandra East', 'Lower Parel']",8.75,18,16,Mumbai,Email
+INV0418,40,Accountant,14536749,2753845,7556601,Low,['Worli'],14.38,12,11,Mumbai,Email
+INV0419,43,Doctor,8177031,246883,1361045,Medium,"['Mulund', 'Goregaon West']",16.01,0,20,Mumbai,Phone
+INV0420,49,Sales Manager,16288661,2333880,8560835,High,"['Borivali East', 'Lower Parel', 'Fort']",12.52,17,12,Mumbai,WhatsApp
+INV0421,33,Entrepreneur,1282302,184945,468485,Medium,['Mulund'],14.54,0,13,Mumbai,Email
+INV0422,39,Architect,13571966,514257,3974263,High,"['Mira Road', 'Vile Parle']",14.66,2,22,Mumbai,Email
+INV0423,34,Software Engineer,774041,115030,390554,Medium,"['Colaba', 'Bandra West', 'Thane East']",10.49,8,13,Mumbai,WhatsApp
+INV0424,59,Software Engineer,12425985,1690620,2652504,Low,"['Mira Road', 'Borivali East']",7.94,15,24,Mumbai,Phone
+INV0425,60,Doctor,9489395,1630971,2680699,High,"['Bandra East', 'Thane West', 'Khar West']",17.27,2,10,Mumbai,WhatsApp
+INV0426,46,Doctor,9172646,283127,2792585,Low,['Lower Parel'],6.39,16,18,Mumbai,Phone
+INV0427,30,Doctor,11603017,1651703,3239731,High,"['Thane East', 'Worli']",14.44,2,4,Mumbai,Email
+INV0428,47,Software Engineer,9322565,472220,3298121,High,['Santacruz West'],13.5,14,19,Mumbai,Phone
+INV0429,56,Accountant,13661848,926230,4404485,High,['Goregaon West'],15.02,5,6,Mumbai,Phone
+INV0430,60,Lawyer,3486920,519462,1635519,Low,"['Dadar', 'Andheri West', 'Kurla']",13.91,5,22,Mumbai,Email
+INV0431,48,Lawyer,11586904,660655,3700206,Medium,"['Mira Road', 'Thane West', 'Worli']",17.43,15,23,Mumbai,WhatsApp
+INV0432,38,Lawyer,15874126,214694,1769199,Low,"['Mira Road', 'Andheri West']",13.88,2,14,Mumbai,WhatsApp
+INV0433,51,Architect,9703955,1575501,2062214,High,"['Chembur', 'Kurla', 'Worli']",9.47,4,21,Mumbai,Phone
+INV0434,39,Entrepreneur,782929,103464,402031,Medium,"['Goregaon East', 'Powai']",15.02,20,16,Mumbai,Phone
+INV0435,42,Architect,2365639,354467,709464,Low,"['Worli', 'Goregaon West', 'Santacruz East']",16.86,10,25,Mumbai,Email
+INV0436,57,Lawyer,11576292,990790,1473812,High,['Kurla'],13.69,11,4,Mumbai,Phone
+INV0437,44,Doctor,9879119,1614789,2608447,High,"['Andheri West', 'Vile Parle', 'Santacruz West']",6.14,4,18,Mumbai,WhatsApp
+INV0438,52,Architect,15177826,325441,3838110,Medium,['Santacruz East'],11.89,5,14,Mumbai,WhatsApp
+INV0439,38,Consultant,1916426,218457,444132,Medium,['Kurla'],16.23,7,12,Mumbai,WhatsApp
+INV0440,41,Architect,2311721,208369,676709,Low,"['Fort', 'Borivali East', 'Bandra East']",6.39,9,13,Mumbai,Email
+INV0441,31,Marketing Executive,2312817,256308,1035270,Medium,"['Lower Parel', 'Borivali East', 'Ghatkopar']",12.35,3,6,Mumbai,WhatsApp
+INV0442,57,Accountant,6064193,302360,562051,High,"['Bandra East', 'Borivali East', 'Khar West']",14.34,1,12,Mumbai,Phone
+INV0443,34,Software Engineer,11483719,1271899,3252610,High,"['Bandra West', 'Powai']",6.39,19,15,Mumbai,WhatsApp
+INV0444,38,Architect,1910224,171858,790762,High,['Khar West'],6.17,1,16,Mumbai,WhatsApp
+INV0445,46,Software Engineer,6032308,508680,2036523,Medium,"['Borivali East', 'Santacruz West', 'Juhu']",6.83,4,12,Mumbai,Email
+INV0446,52,Consultant,3085047,239111,996845,Low,"['Khar West', 'Dadar', 'Malad West']",17.3,2,20,Mumbai,WhatsApp
+INV0447,60,Marketing Executive,10006579,208212,2933471,High,['Bandra West'],10.87,9,23,Mumbai,WhatsApp
+INV0448,59,Architect,506447,100030,301599,Low,"['Malad West', 'Powai', 'Khar West']",9.88,11,8,Mumbai,WhatsApp
+INV0449,37,Software Engineer,9278939,1750059,5031589,High,"['Mulund', 'Khar West', 'Colaba']",7.66,5,3,Mumbai,Email
+INV0450,44,Software Engineer,13704517,1170843,2279445,Medium,"['Powai', 'Thane East', 'Goregaon East']",15.11,15,3,Mumbai,Phone
+INV0451,34,Accountant,2127490,221530,1035342,Medium,"['Kurla', 'Worli']",8.65,12,23,Mumbai,Phone
+INV0452,36,Doctor,4787653,707213,1118583,Low,"['Santacruz West', 'Chembur']",8.38,16,19,Mumbai,Email
+INV0453,41,Entrepreneur,12134326,563056,777445,Medium,['Mira Road'],13.5,4,13,Mumbai,Email
+INV0454,44,Marketing Executive,3490634,324844,1680870,High,['Bandra East'],8.29,16,5,Mumbai,Phone
+INV0455,52,Lawyer,702106,123083,348284,Medium,"['Thane West', 'Goregaon East']",12.45,20,23,Mumbai,Phone
+INV0456,45,Architect,651870,129820,346481,High,"['Goregaon West', 'Fort', 'Malad West']",11.06,2,7,Mumbai,WhatsApp
+INV0457,42,Consultant,3006262,454817,1290031,High,['Malad West'],15.93,12,19,Mumbai,Email
+INV0458,57,Consultant,12904754,692874,4704768,High,"['Kurla', 'Bandra West']",6.72,2,8,Mumbai,Email
+INV0459,41,Marketing Executive,19548584,3770836,4059458,Low,"['Thane East', 'Khar West', 'Lower Parel']",6.29,7,20,Mumbai,Phone
+INV0460,56,Architect,12943700,940938,2814814,Medium,"['Mira Road', 'Mulund']",12.67,17,17,Mumbai,WhatsApp
+INV0461,34,Marketing Executive,586410,113950,320397,Medium,"['Borivali West', 'Bandra East']",8.79,9,9,Mumbai,Email
+INV0462,43,Architect,7811783,949568,2473527,Medium,"['Colaba', 'Santacruz East', 'Thane East']",10.65,4,22,Mumbai,WhatsApp
+INV0463,51,Doctor,11978224,1318636,2294516,Medium,"['Chembur', 'Thane West', 'Ghatkopar']",13.66,9,18,Mumbai,WhatsApp
+INV0464,58,Architect,17790294,3287619,3565657,Medium,"['Kurla', 'Thane East']",9.57,16,24,Mumbai,WhatsApp
+INV0465,36,Entrepreneur,13462581,1999592,7204810,Low,"['Borivali West', 'Thane West', 'Malad West']",16.36,16,6,Mumbai,WhatsApp
+INV0466,51,Consultant,3561125,103281,604233,Medium,"['Santacruz East', 'Chembur']",7.64,13,3,Mumbai,Phone
+INV0467,38,Lawyer,2469310,121039,480489,Low,['Santacruz East'],9.54,5,15,Mumbai,Phone
+INV0468,53,Consultant,946623,148373,431134,High,"['Vile Parle', 'Thane East']",14.62,1,17,Mumbai,Email
+INV0469,45,Consultant,11756880,407145,1459027,Medium,"['Ghatkopar', 'Khar West']",10.18,9,19,Mumbai,WhatsApp
+INV0470,53,Consultant,12554578,876178,4776606,High,['Malad West'],13.59,17,12,Mumbai,Phone
+INV0471,41,Lawyer,6863925,556432,2320739,Medium,"['Juhu', 'Malad West']",11.27,11,16,Mumbai,Phone
+INV0472,57,Banker,14188943,2125868,5943504,Medium,['Santacruz East'],15.94,11,24,Mumbai,Email
+INV0473,60,Software Engineer,4028161,550160,821907,Low,"['Goregaon West', 'Mulund']",17.21,16,21,Mumbai,Phone
+INV0474,51,Entrepreneur,2456566,302975,603568,High,"['Bandra West', 'Lower Parel', 'Fort']",17.42,4,6,Mumbai,Phone
+INV0475,58,Software Engineer,10455886,1987669,5299126,High,"['Mulund', 'Juhu']",13.33,9,20,Mumbai,Email
+INV0476,36,Consultant,11014318,2132064,4264226,Low,"['Thane East', 'Mulund', 'Andheri West']",12.78,10,5,Mumbai,WhatsApp
+INV0477,56,Doctor,16261550,229374,3083383,Low,"['Borivali East', 'Kurla', 'Andheri West']",13.04,13,13,Mumbai,WhatsApp
+INV0478,46,Lawyer,3255914,177599,1061711,High,"['Lower Parel', 'Colaba', 'Santacruz West']",8.19,5,20,Mumbai,Phone
+INV0479,50,Banker,6755707,1328754,3005680,Medium,['Worli'],14.71,7,9,Mumbai,Phone
+INV0480,45,Software Engineer,10472035,1442005,4409373,High,"['Dadar', 'Thane East']",15.45,15,9,Mumbai,Email
+INV0481,54,Lawyer,5628865,467366,1402328,Medium,"['Malad West', 'Borivali West', 'Goregaon East']",12.68,2,20,Mumbai,Phone
+INV0482,52,Consultant,13671314,602660,3666996,Low,"['Worli', 'Powai', 'Santacruz East']",16.49,19,3,Mumbai,WhatsApp
+INV0483,45,Banker,8280838,944057,1719721,Low,['Bandra East'],12.94,12,4,Mumbai,Email
+INV0484,50,Architect,6718941,618543,1747751,Medium,['Fort'],14.37,12,8,Mumbai,Phone
+INV0485,44,Consultant,4288871,146456,726139,Medium,"['Mira Road', 'Colaba', 'Worli']",7.53,7,25,Mumbai,Phone
+INV0486,54,Lawyer,4784037,549264,931821,Medium,"['Juhu', 'Thane West', 'Chembur']",13.31,17,10,Mumbai,Phone
+INV0487,53,Software Engineer,4392060,734275,2463545,Low,"['Juhu', 'Kurla', 'Powai']",15.0,3,22,Mumbai,Email
+INV0488,39,Sales Manager,1563162,214978,626271,Low,['Colaba'],15.58,11,25,Mumbai,Phone
+INV0489,56,Software Engineer,3597328,492346,1853221,High,"['Fort', 'Bandra West']",8.51,19,23,Mumbai,Email
+INV0490,48,Architect,6121122,361216,2698905,High,['Chembur'],15.6,16,7,Mumbai,Email
+INV0491,51,Lawyer,3774486,286501,1424094,Low,"['Khar West', 'Thane East', 'Colaba']",15.57,6,15,Mumbai,WhatsApp
+INV0492,42,Sales Manager,17392055,1294507,1512999,High,"['Bandra East', 'Lower Parel', 'Borivali East']",6.39,10,5,Mumbai,WhatsApp
+INV0493,51,Banker,9495596,1532010,4529771,Medium,"['Khar West', 'Lower Parel']",11.45,8,22,Mumbai,Email
+INV0494,43,Architect,12731193,1180610,6141338,High,"['Santacruz West', 'Thane West']",13.46,12,3,Mumbai,WhatsApp
+INV0495,34,Banker,14068272,1264935,4750887,Medium,['Malad West'],14.24,4,25,Mumbai,WhatsApp
+INV0496,53,Architect,9815768,1071598,3165529,Medium,['Andheri West'],13.47,0,11,Mumbai,WhatsApp
+INV0497,42,Lawyer,18640651,1965084,8009677,Low,"['Santacruz West', 'Thane West', 'Borivali West']",7.96,10,11,Mumbai,Phone
+INV0498,46,Software Engineer,19016879,2647964,5260900,Low,['Colaba'],17.48,0,8,Mumbai,WhatsApp
+INV0499,35,Banker,17364014,784128,4253488,Low,['Ghatkopar'],8.19,6,3,Mumbai,Phone
+INV0500,50,Doctor,11111205,2058107,4937606,Medium,"['Mulund', 'Thane West']",9.86,9,14,Mumbai,Phone
