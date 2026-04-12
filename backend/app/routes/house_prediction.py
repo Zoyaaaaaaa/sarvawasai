@@ -14,12 +14,18 @@ load_dotenv()
 
 router = APIRouter(prefix="/house-prediction", tags=["House Prediction"])
 
-# Initialize predictor
-try:
-    predictor = HousePredictor()
-except Exception as e:
-    logging.error(f"Failed to load house prediction artifacts: {e}")
-    predictor = None
+# Initialize predictor lazily
+predictor = None
+
+def get_predictor():
+    global predictor
+    if predictor is None:
+        try:
+            predictor = HousePredictor()
+        except Exception as e:
+            logging.error(f"Failed to load house prediction artifacts: {e}")
+            raise HTTPException(status_code=503, detail="House prediction model not available")
+    return predictor
 
 # Initialize LLM
 llm = ChatGoogleGenerativeAI(
@@ -79,8 +85,7 @@ class FollowUpQuery(BaseModel):
 
 @router.post("/predict")
 async def predict_house_price(data: HouseInput):
-    if predictor is None:
-        raise HTTPException(status_code=500, detail="Prediction model not loaded.")
+    predictor = get_predictor()
     
     input_dict = {
         'Area': data.Area,

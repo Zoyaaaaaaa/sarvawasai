@@ -14,23 +14,39 @@ except Exception:
 
 class HousePredictor:
     def __init__(self, artifact_path=None):
-        if artifact_path is None:
-            artifact_path = resolve_artifact(
-                "house_prediction_v1.pkl",
-                Path(__file__).resolve().parent / "artifacts" / "house_prediction_v1.pkl",
-            )
-        
-        with open(artifact_path, 'rb') as f:
-            artifacts = pickle.load(f)
-            
-        self.model = artifacts['model']
-        self.encoder = artifacts['encoder']
-        self.features = artifacts['features']
+        self.artifact_path = artifact_path
+        self._artifacts = None  # Lazy loaded
         self.amenity_cols = [
             'Gymnasium', 'Lift Available', 'Car Parking', 'Maintenance Staff', 
             '24x7 Security', "Children's Play Area", 'Clubhouse', 'Intercom', 
             'Landscaped Gardens', 'Indoor Games', 'Gas Connection', 'Jogging Track', 'Swimming Pool'
         ]
+    
+    def _load_artifacts(self):
+        """Lazy load artifacts only when needed"""
+        if self._artifacts is None:
+            if self.artifact_path is None:
+                self.artifact_path = resolve_artifact(
+                    "house_prediction_v1.pkl",
+                    Path(__file__).resolve().parent / "artifacts" / "house_prediction_v1.pkl",
+                )
+            
+            with open(self.artifact_path, 'rb') as f:
+                self._artifacts = pickle.load(f)
+        
+        return self._artifacts
+    
+    @property
+    def model(self):
+        return self._load_artifacts()['model']
+    
+    @property
+    def encoder(self):
+        return self._load_artifacts()['encoder']
+    
+    @property
+    def features(self):
+        return self._load_artifacts()['features']
 
     def predict(self, input_data: dict):
         """

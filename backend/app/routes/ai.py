@@ -164,16 +164,16 @@ router = APIRouter(prefix="/ai")
 # Global model manager instance
 model_manager = ModelManager()
 
-@router.on_event("startup")
-async def startup_event():
-    """Load models on startup"""
-    try:
-        logger.info("Starting model loading process...")
-        model_manager.load_models()
-        logger.info("Models loaded successfully on startup")
-    except Exception as e:
-        logger.error(f"Failed to load models on startup: {str(e)}")
-        logger.error(f"Full traceback: {traceback.format_exc()}")
+# @router.on_event("startup")
+# async def startup_event():
+#     """Load models on startup"""
+#     try:
+#         logger.info("Starting model loading process...")
+#         model_manager.load_models()
+#         logger.info("Models loaded successfully on startup")
+#     except Exception as e:
+#         logger.error(f"Failed to load models on startup: {str(e)}")
+#         logger.error(f"Full traceback: {traceback.format_exc()}")
 
 @router.get("/")
 async def get_apicall():

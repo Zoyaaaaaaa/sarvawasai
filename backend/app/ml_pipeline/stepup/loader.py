@@ -13,40 +13,52 @@ except Exception:
 
 BASE = os.path.dirname(__file__)
 
-# -----------------------------------------------------
-# LOAD SPATIAL MODEL
-# -----------------------------------------------------
-with open(
-    resolve_artifact(
-        "spatial_random_forest2.pkl",
-        Path(BASE) / "models" / "spatial_random_forest2.pkl",
-    ),
-    "rb"
-) as f:
-    spatial_model = joblib.load(f)
+# Lazy loaded variables
+_spatial_model = None
+_loc_df = None
+_hpi = None
 
-# -----------------------------------------------------
-# LOAD LOCALITY COORDINATES
-# -----------------------------------------------------
-loc_df = pd.read_csv(
-    resolve_raw_data(
-        "mumbai_location_coordinates.csv",
-        Path(BASE) / "data" / "mumbai_location_coordinates.csv",
-    )
-)
+def get_spatial_model():
+    global _spatial_model
+    if _spatial_model is None:
+        with open(
+            resolve_artifact(
+                "spatial_random_forest2.pkl",
+                Path(BASE) / "models" / "spatial_random_forest2.pkl",
+            ),
+            "rb"
+        ) as f:
+            _spatial_model = joblib.load(f)
+    return _spatial_model
 
-# -----------------------------------------------------
-# LOAD HPI DATA
-# -----------------------------------------------------
-hpi = pd.read_csv(
-    resolve_raw_data(
-        "mumbai_hpi.csv",
-        Path(BASE) / "data" / "mumbai_hpi.csv",
-    )
-)
+def get_loc_df():
+    global _loc_df
+    if _loc_df is None:
+        _loc_df = pd.read_csv(
+            resolve_raw_data(
+                "mumbai_location_coordinates.csv",
+                Path(BASE) / "data" / "mumbai_location_coordinates.csv",
+            )
+        )
+    return _loc_df
 
-hpi["month"] = pd.to_datetime(hpi["month"])
-hpi.set_index("month", inplace=True)
-hpi = hpi.asfreq("MS")
+def get_hpi():
+    global _hpi
+    if _hpi is None:
+        _hpi = pd.read_csv(
+            resolve_raw_data(
+                "mumbai_hpi.csv",
+                Path(BASE) / "data" / "mumbai_hpi.csv",
+            )
+        )
+        _hpi["month"] = pd.to_datetime(_hpi["month"])
+        _hpi.set_index("month", inplace=True)
+        _hpi = _hpi.asfreq("MS")
+    return _hpi
+
+# For backward compatibility
+spatial_model = property(get_spatial_model)
+loc_df = property(get_loc_df)
+hpi = property(get_hpi)
 
 hpi.columns = ["bhk1", "bhk2", "bhk3", "all"]

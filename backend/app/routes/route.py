@@ -108,14 +108,29 @@ SCALER_PATH = resolve_artifact(
     Path(BASE_DIR).parent / "scaler.pkl",
 )
 
-try:
-    model = joblib.load(MODEL_PATH)
-    scaler = joblib.load(SCALER_PATH)
-    print("Model and Scaler loaded successfully.")
-except Exception as e:
-    print(f"Error loading model or scaler: {e}")
-    model = None
-    scaler = None
+# Lazy loaded models
+_model = None
+_scaler = None
+
+def get_model():
+    global _model
+    if _model is None:
+        try:
+            _model = joblib.load(MODEL_PATH)
+        except Exception as e:
+            print(f"Error loading model: {e}")
+            raise
+    return _model
+
+def get_scaler():
+    global _scaler
+    if _scaler is None:
+        try:
+            _scaler = joblib.load(SCALER_PATH)
+        except Exception as e:
+            print(f"Error loading scaler: {e}")
+            raise
+    return _scaler
 
 class BuyerInput(BaseModel):
     buyerBudgetMax: float
@@ -168,7 +183,10 @@ def recommend_investors(buyer_input, investors_df):
 
 @router.post("/recommend")
 async def recommend_endpoint(buyer: BuyerInput):
-    if model is None or scaler is None:
+    try:
+        model = get_model()
+        scaler = get_scaler()
+    except Exception:
         raise HTTPException(status_code=500, detail="Model or scaler not loaded")
 
     try:
