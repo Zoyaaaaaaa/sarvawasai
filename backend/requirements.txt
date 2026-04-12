@@ -6,6 +6,7 @@ motor
 reportlab
 PyPDF2
 requests
+twilio
 python-dotenv
 joblib
 xgboost
