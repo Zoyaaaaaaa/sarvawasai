@@ -69,6 +69,17 @@ async def send_otp(request: SendOtpRequest):
         # Normalize to E.164 phone number
         phone = normalize_phone(request.phone)
 
+        is_dev = os.getenv("ENV") != "production"
+
+        # DEV MODE BYPASS
+        if is_dev:
+            print("✅ DEV MODE: Mock OTP sent to:", phone)
+            return {
+                "status": "success",
+                "message": f"OTP sent to {phone} (DEV MODE)",
+                "verification_sid": "dev-mode-sid"
+            }
+
         # Send OTP via Twilio Verify Service
         verification = client.verify.v2.services(TWILIO_VERIFY_SERVICE_SID).verifications.create(
             to=phone,
@@ -144,6 +155,17 @@ async def resend_otp(request: SendOtpRequest):
     try:
         # Normalize to E.164 phone number
         phone = normalize_phone(request.phone)
+
+        is_dev = os.getenv("ENV") != "production"
+
+        # DEV MODE BYPASS
+        if is_dev:
+            print("✅ DEV MODE: Mock OTP resent to:", phone)
+            return {
+                "status": "success",
+                "message": f"OTP resent to {phone} (DEV MODE)",
+                "verification_sid": "dev-mode-sid"
+            }
 
         # Send OTP via Twilio Verify Service
         verification = client.verify.v2.services(TWILIO_VERIFY_SERVICE_SID).verifications.create(
