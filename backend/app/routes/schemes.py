@@ -19,7 +19,7 @@ from langgraph.graph import MessagesState, StateGraph, START
 from langgraph.checkpoint.memory import InMemorySaver
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage, RemoveMessage, AIMessage
-from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_tavily import TavilySearch
 
 # FastAPI imports
 from fastapi import APIRouter, HTTPException, Response
@@ -367,7 +367,7 @@ Brief description of the scheme
         )
         
         # Initialize search tool
-        self.search_tool = TavilySearchResults(
+        self.search_tool = TavilySearch(
             max_results=5,
             include_domains=["myscheme.gov.in"],
             search_depth="advanced"

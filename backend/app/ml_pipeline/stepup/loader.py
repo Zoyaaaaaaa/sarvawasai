@@ -54,11 +54,5 @@ def get_hpi():
         _hpi["month"] = pd.to_datetime(_hpi["month"])
         _hpi.set_index("month", inplace=True)
         _hpi = _hpi.asfreq("MS")
+        _hpi.columns = ["bhk1", "bhk2", "bhk3", "all"]
     return _hpi
-
-# For backward compatibility
-spatial_model = property(get_spatial_model)
-loc_df = property(get_loc_df)
-hpi = property(get_hpi)
-
-hpi.columns = ["bhk1", "bhk2", "bhk3", "all"]
