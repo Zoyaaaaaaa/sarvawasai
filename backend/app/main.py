@@ -57,6 +57,7 @@ app.add_middleware(
         "https://super-duper-couscous-v4x77545rpq2wgp6-5174.app.github.dev",
         "https://super-duper-couscous-v4x77545rpq2wgp6-3000.app.github.dev",
         # Localhost
+        "https://sarvawasai.vercel.app",
         "https://sarvawasai-d2math1sb-zoya-hassans-projects.vercel.app",
         "http://localhost:5173",
         "http://localhost:5174",
