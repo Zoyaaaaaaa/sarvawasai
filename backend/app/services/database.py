@@ -4,8 +4,9 @@ from pymongo import ASCENDING
 import os
 import logging
 
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://riddhijlalla:sarvawas123@cluster0.pwktedk.mongodb.net/")
-DB_NAME = os.getenv("DB_NAME", "sarvawas_ai")
+MONGO_URI = os.getenv("MONGO_URI") or os.getenv("MONGODB_URL") or "mongodb://127.0.0.1:27017"
+DB_NAME = os.getenv("DB_NAME") or os.getenv("MONGODB_DB_NAME") or "sarvawas_ai"
+MONGO_SERVER_SELECTION_TIMEOUT_MS = int(os.getenv("MONGO_SERVER_SELECTION_TIMEOUT_MS", "5000"))
 
 client: AsyncIOMotorClient | None = None
 db = None
@@ -14,10 +15,22 @@ db = None
 async def connect_to_mongo():
     global client, db
     if client is None:
-        client = AsyncIOMotorClient(MONGO_URI)
-        db = client[DB_NAME]
-        logging.info(f"Connected to MongoDB: {DB_NAME}")
-        await create_indexes()
+        client = AsyncIOMotorClient(
+            MONGO_URI,
+            serverSelectionTimeoutMS=MONGO_SERVER_SELECTION_TIMEOUT_MS,
+        )
+        try:
+            # Force a server selection at startup so DNS/network errors surface early.
+            await client.admin.command("ping")
+            db = client[DB_NAME]
+            logging.info(f"Connected to MongoDB: {DB_NAME}")
+            await create_indexes()
+        except Exception:
+            logging.error("MongoDB connection failed.", exc_info=True)
+            client.close()
+            client = None
+            db = None
+            raise
 
 # -------------------- DISCONNECT --------------------
 async def close_mongo_connection():
@@ -30,7 +43,7 @@ async def close_mongo_connection():
 # -------------------- GET DATABASE --------------------
 def get_database():
     if db is None:
-        raise RuntimeError("Database not connected. Call connect_to_mongo() first.")
+        raise RuntimeError("Database is unavailable. Check MongoDB URI/network and try again.")
     return db
 
 async def create_indexes():
@@ -39,6 +52,10 @@ async def create_indexes():
     Safely handles sparse indexes to allow multiple null values.
     Idempotent: will drop and recreate conflicting indexes.
     """
+    if db is None:
+        logging.warning("Skipping index creation because database is unavailable.")
+        return
+
     try:
         users = db.users
         indexes = await users.index_information()

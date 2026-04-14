@@ -20,8 +20,7 @@ async def lifespan(app: FastAPI):
     try:
         await connect_to_mongo()
     except Exception as e:
-        logging.error(f"MongoDB connection failed on startup: {e}")
-        raise e
+        logging.warning(f"MongoDB connection failed on startup; continuing without DB: {e}")
     yield
     # Shutdown
     try:
@@ -64,7 +63,9 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://127.0.0.1:5174",
         "http://127.0.0.1:3000",
+        "http://127.0.0.1:8000",
     ],
+    allow_origin_regex=r"https?://(localhost|127\.0\.0\.1)(:\d+)?",
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["Content-Type", "Authorization", "Accept", "Origin"],
@@ -84,13 +85,6 @@ app.include_router(schemes.router)  # Add the schemes router
 app.include_router(ml_similarity.router)  # Add ML similarity router
 
 app.include_router(house_prediction.router)
-
-# Legal Analysis Router
-try:
-    app.include_router(legal_routes.router)  # Add legal document analysis router
-    logging.info("Legal Analysis API routes registered successfully")
-except Exception as e:
-    logging.warning(f"Legal Analysis routes not available: {e}")
 
 # -------------------- HEALTH CHECKS --------------------
 @app.get("/")

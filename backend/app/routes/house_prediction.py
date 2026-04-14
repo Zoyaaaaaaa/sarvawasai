@@ -27,11 +27,34 @@ def get_predictor():
             raise HTTPException(status_code=503, detail="House prediction model not available")
     return predictor
 
-# Initialize LLM
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    api_key="AIzaSyAol5_b4SbkUboG_kSOGtPFsCKE6o-eZBk"
-)
+def build_fallback_explanation(insights: Dict, predicted_price: float) -> str:
+    """Return a deterministic explanation when LLM is unavailable."""
+    location = insights.get('location', 'the selected location')
+    area = insights.get('area', 0)
+    bedrooms = insights.get('bedrooms', 0)
+    amenity_score = insights.get('amenity_score', 0)
+
+    return (
+        f"Estimated value for a {bedrooms} BHK, {area} sq ft property in {location} is "
+        f"approximately Rs. {predicted_price:,.0f}. "
+        f"Pricing is influenced by location demand, unit size, and amenity score ({amenity_score}/13). "
+        "This estimate should be treated as indicative and validated against current market listings."
+    )
+
+
+# Initialize LLM only if key is available
+google_api_key = os.getenv("GOOGLE_API_KEY")
+llm = None
+agent = None
+if google_api_key:
+    try:
+        llm = ChatGoogleGenerativeAI(
+            model="gemini-2.5-flash",
+            api_key=google_api_key,
+        )
+    except Exception as e:
+        logging.warning(f"House prediction LLM init failed, continuing without LLM: {e}")
+        llm = None
 
 # Global memory saver and last prediction context
 memory = MemorySaver()
@@ -53,12 +76,17 @@ def get_prediction_info(query: str) -> str:
 - New/Resale: {'New' if ctx['new_resale'] == 1 else 'Resale'}
 """
 
-# Create agent with memory
-agent = create_react_agent(
-    llm,
-    tools=[get_prediction_info],
-    checkpointer=memory
-)
+# Create agent with memory when LLM is available
+if llm is not None:
+    try:
+        agent = create_react_agent(
+            llm,
+            tools=[get_prediction_info],
+            checkpointer=memory
+        )
+    except Exception as e:
+        logging.warning(f"House prediction agent init failed, continuing without agent: {e}")
+        agent = None
 
 class HouseInput(BaseModel):
     Area: float
@@ -130,16 +158,23 @@ Amenities: {insights['amenity_score']}/13
 
 Focus on location value and key pricing factors and explain the prediction in the maximum of 4 lines."""
 
-        result = agent.invoke(
-            {"messages": [HumanMessage(content=prompt)]},
-            {"configurable": {"thread_id": "prediction"}}
-        )
-        
-        explanation = result["messages"][-1].content
-        
-        # Ensure explanation is a string (handle multimodal/structured content)
-        if isinstance(explanation, list):
-            explanation = "".join([part.get("text", "") if isinstance(part, dict) else str(part) for part in explanation])
+        explanation = None
+        if agent is not None:
+            try:
+                result = agent.invoke(
+                    {"messages": [HumanMessage(content=prompt)]},
+                    {"configurable": {"thread_id": "prediction"}}
+                )
+                explanation = result["messages"][-1].content
+
+                # Ensure explanation is a string (handle multimodal/structured content)
+                if isinstance(explanation, list):
+                    explanation = "".join([part.get("text", "") if isinstance(part, dict) else str(part) for part in explanation])
+            except Exception as llm_error:
+                logging.warning(f"LLM explanation unavailable, using fallback: {llm_error}")
+
+        if not explanation:
+            explanation = build_fallback_explanation(insights, predicted_price)
         
         logging.info(f"PREDICTION: Location={data.Location}, Price={predicted_price}")
         
@@ -148,7 +183,7 @@ Focus on location value and key pricing factors and explain the prediction in th
             "formatted_price": f"₹{predicted_price:,.2f}",
             "insights": insights,
             "explanation": explanation,
-            "stage": "Production with LangGraph Agent"
+            "stage": "Production with LangGraph Agent" if agent is not None else "Prediction with fallback explanation"
         }
         
     except Exception as e:
@@ -164,6 +199,19 @@ async def ask_follow_up(query: FollowUpQuery):
             status_code=400,
             detail="No prediction available. Run /predict first."
         )
+
+    if agent is None:
+        # Graceful response when LLM is not configured
+        price = last_prediction_context.get('price', 0)
+        location = last_prediction_context.get('location', 'selected location')
+        return {
+            "answer": (
+                f"Follow-up AI assistant is currently unavailable. Last estimate for {location} is "
+                f"Rs. {price:,.0f}. Please configure a valid GOOGLE_API_KEY to enable conversational follow-ups."
+            ),
+            "question": query.question,
+            "thread_id": query.thread_id
+        }
     
     try:
         # Agent will use memory from thread_id and can access prediction via tool

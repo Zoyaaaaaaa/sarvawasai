@@ -331,15 +331,7 @@ export default function HomebuyerDashboard() {
               onClick={() => navigate('/stepup2')}
               variant="plum"
             />
-            {/* Pehla Kadam */}
-            <DashboardFeatureCard
-              title="Pehla Kadam"
-              description="Micro Savings and Guided Planning to help you prepare for homeownership, even with a tight budget"
-              actionLabel="Start Journey"
-              icon={TrendingUp}
-              onClick={() => navigate('/stepup2')}
-              variant="slate"
-            />
+            
             {/* House Scheme Finder */}
             <DashboardFeatureCard
               title="House Scheme Finder"
