@@ -32,7 +32,7 @@ async def lifespan(app: FastAPI):
 # -------------------- IMPORT ROUTERS --------------------
 # Using absolute imports for consistency
 try:
-    from .routes import route, ai, schemes, users, auth, ml_similarity, legal_analysis
+    from .routes import route, ai, schemes, users, auth, ml_similarity, legal_analysis, legal_chat
     from .routes import house_prediction
     from .routes.stepup import router as stepup_router
 except Exception as e:
@@ -55,7 +55,8 @@ app.add_middleware(
         "https://super-duper-couscous-v4x77545rpq2wgp6-5173.app.github.dev",
         "https://super-duper-couscous-v4x77545rpq2wgp6-5174.app.github.dev",
         "https://super-duper-couscous-v4x77545rpq2wgp6-3000.app.github.dev",
-        # Localhost
+        # Localhost"
+        "https://redesigned-cod-44x99r4rv79h7w4w-5173.app.github.dev",
         "https://sarvawasai.vercel.app",
         "https://sarvawasai-d2math1sb-zoya-hassans-projects.vercel.app",
         "http://localhost:5173",
@@ -81,6 +82,7 @@ app.include_router(route.router)
 app.include_router(ai.router)
 app.include_router(stepup_router)
 app.include_router(legal_analysis.router)
+app.include_router(legal_chat.router)  # Legal document chat with memory
 
 app.include_router(schemes.router)  # Add the schemes router
 app.include_router(ml_similarity.router)  # Add ML similarity router

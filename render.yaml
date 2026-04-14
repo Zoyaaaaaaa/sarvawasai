@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: sarvawas-api
+    runtime: python3
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python -m uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ENV
+        value: production
+      - key: MONGODB_URL
+        sync: false  # Set this in Render dashboard
+      - key: MONGODB_DB_NAME
+        value: sarvawas_ai
+      - key: JWT_SECRET_KEY
+        sync: false  # Set this in Render dashboard
+      - key: GOOGLE_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: GEMINI_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: GROQ_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: TAVILY_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: TWILIO_ACCOUNT_SID
+        sync: false  # Set this in Render dashboard
+      - key: TWILIO_AUTH_TOKEN
+        sync: false  # Set this in Render dashboard
+      - key: TWILIO_VERIFY_SERVICE_SID
+        sync: false  # Set this in Render dashboard
+      - key: DOCUSEAL_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false  # Set this in Render dashboard
+      - key: CLOUDINARY_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: CLOUDINARY_API_SECRET
+        sync: false  # Set this in Render dashboard
+      - key: PINATA_JWT
+        sync: false  # Set this in Render dashboard
+      - key: PINATA_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: PINATA_API_SECRET
+        sync: false  # Set this in Render dashboard
