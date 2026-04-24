@@ -197,7 +197,10 @@ async def mark_verified(request: MarkVerifiedRequest):
             from ..services.database import get_database
         except Exception:
             from backend.app.services.database import get_database  # type: ignore
-        db = get_database()
+        try:
+            db = get_database()
+        except RuntimeError as exc:
+            raise HTTPException(status_code=503, detail=str(exc))
         
         # Update user document to mark as verified
         result = await db.users.update_one(

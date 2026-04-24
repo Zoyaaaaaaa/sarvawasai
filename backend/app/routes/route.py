@@ -137,7 +137,7 @@ class BuyerInput(BaseModel):
     buyerRisk: int  # 0=Low, 1=Medium, 2=High
     location: str
 
-def recommend_investors(buyer_input, investors_df):
+def recommend_investors(buyer_input, investors_df, model, scaler):
     recommendations = []
 
     for _, inv in investors_df.iterrows():
@@ -198,8 +198,8 @@ async def recommend_endpoint(buyer: BuyerInput):
         investors_df = pd.read_csv(investors_path)
         print("Investors loaded:", investors_df.shape)
 
-        buyer_input = buyer.dict()
-        top_matches = recommend_investors(buyer_input, investors_df)
+        buyer_input = buyer.model_dump()
+        top_matches = recommend_investors(buyer_input, investors_df, model, scaler)
 
         return {"buyer_input": buyer_input, "recommendations": top_matches}
 

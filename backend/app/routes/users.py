@@ -9,12 +9,29 @@ except Exception:
 from datetime import datetime, timezone
 from bson import ObjectId
 from pymongo.errors import DuplicateKeyError
-from passlib.context import CryptContext
 import math
 import hashlib
+import bcrypt
 
-pwd_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")
 router = APIRouter(prefix="/users", tags=["users"])
+
+
+def get_db_or_503():
+    try:
+        return get_database()
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
+
+
+def hash_password(password: str) -> str:
+    return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+
+
+def verify_password(password: str, password_hash: str) -> bool:
+    try:
+        return bcrypt.checkpw(password.encode("utf-8"), password_hash.encode("utf-8"))
+    except (ValueError, TypeError):
+        return False
 
 @router.post("/signup")
 async def signup_user(payload: dict):
@@ -53,7 +70,7 @@ async def signup_user(payload: dict):
     - avg_holding_duration: Average months held
     """
 
-    db = get_database()
+    db = get_db_or_503()
 
     # -------------------- Validate required fields --------------------
     required_fields = ["fullName", "email", "phone", "userType", "password"]
@@ -82,7 +99,7 @@ async def signup_user(payload: dict):
         "fullName": payload.get("fullName"),
         "email": payload.get("email"),
         "phone": payload.get("phone"),
-        "passwordHash": pwd_ctx.hash(password),
+        "passwordHash": hash_password(password),
         "role": role,
         "casteCategory": payload.get("casteCategory", "Prefer not to say"),
         "age": payload.get("age"),
@@ -224,7 +241,7 @@ async def signup_user(payload: dict):
 
 @router.post("/login")
 async def login_user(payload: dict):
-    db = get_database()
+    db = get_db_or_503()
 
     email = payload.get("email")
     password = payload.get("password")
@@ -245,7 +262,7 @@ async def login_user(payload: dict):
 
         pw_hash = user.get("passwordHash")
 
-        if not pw_hash or not pwd_ctx.verify(password, pw_hash):
+        if not pw_hash or not verify_password(password, pw_hash):
             raise HTTPException(status_code=401, detail="Invalid credentials")
 
         await db.users.update_one(
@@ -272,7 +289,7 @@ async def get_user_profile(user_id: str):
     """
     Get user profile with role-specific data
     """
-    db = get_database()
+    db = get_db_or_503()
     
     try:
         # Get user document
@@ -310,7 +327,7 @@ async def get_user_notifications(user_id: str):
     """
     Get user notifications
     """
-    db = get_database()
+    db = get_db_or_503()
     
     try:
         # Mock notifications for now - replace with actual notification logic later
@@ -357,7 +374,7 @@ async def update_user_profile(user_id: str, payload: dict):
     """
     Update user profile with additional details
     """
-    db = get_database()
+    db = get_db_or_503()
     
     try:
         # Get current user data
@@ -370,9 +387,9 @@ async def update_user_profile(user_id: str, payload: dict):
         
         # Handle password change
         if "currentPassword" in payload and "newPassword" in payload:
-            if not pwd_ctx.verify(payload["currentPassword"], user.get("password", "")):
+            if not verify_password(payload["currentPassword"], user.get("passwordHash", "")):
                 raise HTTPException(status_code=400, detail="Current password is incorrect")
-            update_data["password"] = pwd_ctx.hash(payload["newPassword"])
+            update_data["passwordHash"] = hash_password(payload["newPassword"])
         
         # Update user fields
         user_fields = ["fullName", "phone", "email", "profession"]
@@ -435,7 +452,7 @@ async def delete_user_account(user_id: str, payload: dict):
     """
     Delete user account after OTP verification
     """
-    db = get_database()
+    db = get_db_or_503()
     
     try:
         # For now, accept any OTP - in a real app, you'd verify the actual OTP

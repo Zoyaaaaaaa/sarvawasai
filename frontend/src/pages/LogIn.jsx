@@ -33,8 +33,10 @@ export default function Login() {
     try {
       const response = await fetch(apiUrl('/users/login'), {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify({
           email: formData.email,

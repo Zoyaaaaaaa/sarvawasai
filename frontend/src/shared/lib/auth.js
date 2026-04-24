@@ -87,12 +87,7 @@ export function loadAuthSession() {
 }
 
 export function clearAuthSession() {
-  localStorage.removeItem(AUTH_KEY)
-  localStorage.removeItem('userId')
-  localStorage.removeItem('userRole')
-  localStorage.removeItem('userName')
-  localStorage.removeItem('userEmail')
-  localStorage.removeItem('userPhone')
+  localStorage.clear()
 
   sessionStorage.removeItem('userData')
   sessionStorage.removeItem('userId')

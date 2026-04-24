@@ -2,7 +2,6 @@ bcrypt
 fastapi
 uvicorn[standard]
 gunicorn
-passlib
 motor
 reportlab
 PyPDF2
