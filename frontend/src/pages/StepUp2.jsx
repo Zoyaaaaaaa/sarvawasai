@@ -40,7 +40,7 @@ export default function StepUp2() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/stepup/simulate",
+        "https://sarvawasai.onrender.com/stepup/simulate",
         {
           ...form,
           area: Number(form.area),
